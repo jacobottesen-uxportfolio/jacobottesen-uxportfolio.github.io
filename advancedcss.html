@@ -97,9 +97,9 @@
             height: 25em;
             border-radius: 10px;
             border-radius: 5px;
-            -webkit-box-shadow: 0px 11px 60px 0px rgba(0, 0, 0, 0.0);
-            -moz-box-shadow: 0px 11px 60px 0px rgba(0, 0, 0, 0.0);
-            box-shadow: 0px 11px 60px 0px rgba(0, 0, 0, 0.0);
+            -webkit-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.03);
+            -moz-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.03);
+            box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.03);
             border-radius: 5px;
             -webkit-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, .5);
             transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, .5);
@@ -118,11 +118,11 @@
             left: 0;
             width: 100%;
             height: 100%;
-            -webkit-box-shadow: 0px 11px 30px 0px rgba(0, 0, 0, 0.08);
-            -moz-box-shadow: 0px 11px 30px 0px rgba(0, 0, 0, 0.08);
-            box-shadow: 0px 11px 30px 0px rgba(0, 0, 0, 0.08);
+            -webkit-box-shadow: 0px 11px 80px 0px rgba(0, 0, 0, 0.06);
+            -moz-box-shadow: 0px 11px 80px 0px rgba(0, 0, 0, 0.06);
+            box-shadow: 0px 11px 80px 0px rgba(0, 0, 0, 0.06);
             opacity: 0;
-            -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, .5);
+            -webkit-transition: all 0.9s cubic-bezier(0.165, 0.84, 0.44, .5);
             transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, .5);
             webkit-filter: blur(4px);
             /* Chrome, Safari, Opera */
@@ -130,8 +130,8 @@
         }
 
         .imghover:hover {
-            -webkit-transform: scale(1.02, 1.02);
-            transform: scale(1.02, 1.02);
+            -webkit-transform: scale(.98, .98);
+            transform: scale(.98, .98);
         }
 
 
@@ -156,7 +156,7 @@
 
 
         .smallspacer {
-            margin-top: 5em;
+            margin-top: 2em;
         }
 
         #centertext {
@@ -182,16 +182,73 @@
             margin-top: 1em;
         }
 
-        
-        .link {
-            
-        }
-        
-        
+
+        .link {}
+
+
         .link:hover {
             text-decoration: none;
             color: #0056B3;
-            
+
+        }
+
+
+
+
+
+
+
+
+        .btn {
+            position: relative;
+            color: white;
+            background-color: blue;
+            display: inline-block;
+            border-radius: 4px;
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-bottom: 8px;
+            padding-top: 8px;
+            font-weight: 300;
+
+
+            -webkit-box-shadow: 16px 19px 19px 0px rgba(22, 5, 255, 0.08);
+            -moz-box-shadow: 16px 19px 19px 0px rgba(22, 5, 255, 0.08);
+            box-shadow: 16px 19px 19px 0px rgba(22, 5, 255, 0.08);
+
+            -webkit-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, .5);
+            transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, .5);
+
+        }
+
+        .btn::after {
+            content: "";
+            border-radius: 2px;
+            position: absolute;
+            z-index: -1;
+            top: 0;
+
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+            opacity: 0;
+            -webkit-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, .5);
+            transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, .5);
+
+        }
+
+        .btn:hover {
+
+            -webkit-box-shadow: 2px 7px 13px 0px rgba(22, 5, 255, 0.16);
+            -moz-box-shadow: 2px 7px 13px 0px rgba(22, 5, 255, 0.16);
+            box-shadow: 2px 7px 13px 0px rgba(22, 5, 255, 0.16);
+        }
+
+
+
+        .btn:hover::after {
+            opacity: 1;
         }
 
 
@@ -299,10 +356,10 @@
                     <div class="col-12 ">
                         <div class="imghover">
                             <img src="Artboard%20Copy%204.png" class="img-fluid img-style">
-                            <div class="overlay">
-                                <div class="text">UX Research @Workfront</div>
-                            </div>
+
                         </div>
+
+
                     </div>
                 </div>
             </a>
@@ -321,18 +378,20 @@
             </div>
 
             <div class="smallspacer"></div>
-            <a href="https://blog.prototypr.io/case-study-mormon-org-chat-299f618c8fe7" target="_blank">
-                <div class="row justify-content-center">
-                    <div class="col-12 ">
+
+            <div class="row justify-content-center">
+                <div class="col-12 ">
+                    <a href="https://blog.prototypr.io/case-study-mormon-org-chat-299f618c8fe7" target="_blank">
                         <div class="imghover">
                             <img src="Artboard%20Copy%205.png" class="img-fluid img-style">
                             <div class="overlay">
                                 <div class="text">UX Research @Workfront</div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
-            </a>
+            </div>
+
         </div>
 
 
@@ -348,7 +407,7 @@
             <div class="row justify-content-center">
                 <div class="col-12 ">
                     <div class="imghover">
-                        <img src="Artboard%20Copy%205.png" class="img-fluid img-style">
+                        <img src="Artboard%20Copy%207.png" class="img-fluid img-style">
                         <div class="overlay">
                             <div class="text">UX Research @Workfront</div>
                         </div>
@@ -383,12 +442,14 @@
             <div class="smallspacer"></div>
             <div class="row justify-content-center">
                 <div class="col-12 ">
-                    <div class="imghover">
-                        <img src="Artboard%20Copy%207.png" class="img-fluid img-style">
-                        <div class="overlay">
-                            <div class="text">UX Research @Workfront</div>
+                    <a href="https://medium.com/@ottesenjacob1994/my-daily-ui-challenge-1eef87c2c92c" target="_blank">
+                        <div class="imghover">
+                            <img src="ui%20design.png" class="img-fluid img-style">
+                            <div class="overlay">
+                                <div class="text">UX Research @Workfront</div>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
 
@@ -440,12 +501,14 @@
             </div>
             <div class="smallspacer"></div>
             <div class="row justify-content-center">
-                <div class="col-12 ">
-                    <p>Email</p>
+                <a href="mailto:ottesenjacob1994@gmail.com" target="_top">
+                    <div class="col-12 ">
+                        <p class="btn">Email Me</p>
 
-                </div>
+                    </div>
+                </a>
+
             </div>
-            <div class="smallspacer"></div>
 
 
 
@@ -457,6 +520,9 @@
 
 
         </div>
+        <div class="smallspacer"></div>
+        <br>
+        <div class="smallspacer"></div>
 
 
 
