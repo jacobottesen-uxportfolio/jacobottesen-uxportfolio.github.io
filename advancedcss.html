@@ -45,7 +45,7 @@
 
         .spacer {
 
-            margin-top: 18em;
+            margin-top: 16em;
         }
 
         a {
@@ -93,8 +93,8 @@
         .imghover {
             position: relative;
             display: inline-block;
-            width: 25em;
-            height: 25em;
+            width: 28em;
+            height: 28em;
             border-radius: 10px;
             border-radius: 5px;
             -webkit-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.03);
@@ -124,9 +124,7 @@
             opacity: 0;
             -webkit-transition: all 0.9s cubic-bezier(0.165, 0.84, 0.44, .5);
             transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, .5);
-            webkit-filter: blur(4px);
-            /* Chrome, Safari, Opera */
-            filter: blur(4px);
+           
         }
 
         .imghover:hover {
@@ -160,7 +158,7 @@
         }
 
         #centertext {
-            width: 25em;
+            width: 30em;
             text-align: left;
         }
 
@@ -183,6 +181,12 @@
         }
 
 
+
+        .smallestspacer {
+            margin-top: .75em;
+        }
+
+
         .link {}
 
 
@@ -193,9 +197,11 @@
         }
 
 
-
-
-
+        .casetitle {
+            color: #BABABA;
+            font-weight: 300;
+            font-size: 22px;
+        }
 
 
 
@@ -212,9 +218,9 @@
             font-weight: 300;
 
 
-            -webkit-box-shadow: 16px 19px 19px 0px rgba(22, 5, 255, 0.08);
-            -moz-box-shadow: 16px 19px 19px 0px rgba(22, 5, 255, 0.08);
-            box-shadow: 16px 19px 19px 0px rgba(22, 5, 255, 0.08);
+            -webkit-box-shadow: 16px 19px 19px 0px rgba(22, 5, 255, 0.14);
+            -moz-box-shadow: 16px 19px 19px 0px rgba(22, 5, 255, 0.14);
+            box-shadow: 16px 19px 19px 0px rgba(22, 5, 255, 0.14);
 
             -webkit-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, .5);
             transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, .5);
@@ -222,15 +228,7 @@
         }
 
         .btn::after {
-            content: "";
-            border-radius: 2px;
-            position: absolute;
-            z-index: -1;
-            top: 0;
-
-            left: 0;
-            width: 100%;
-            height: 100%;
+           
 
             opacity: 0;
             -webkit-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, .5);
@@ -250,6 +248,13 @@
         .btn:hover::after {
             opacity: 1;
         }
+
+
+
+
+
+
+
 
 
 
@@ -327,18 +332,17 @@
 
                 <div class="col-12 ">
 
-                    <a href="#"><i class="fa fa-medium icon"></i></a>
-                    <a href="#"><i class="fa fa-behance icon"></i></a>
-                    <a href="#"><i class="fa fa-linkedin icon"></i></a>
-                    <a href="#"><i class="fa fa-dribbble icon"></i></a>
-                    <a href="#"><i class="fas fa-envelope icon"></i></a>
+                    <a href="https://medium.com/@ottesenjacob1994" target="_blank"><i class="fa fa-medium icon"></i></a>
+                    <a href="https://www.behance.net/ott1200693db" target="_blank"><i class="fa fa-behance icon"></i></a>
+                    <a href="https://www.linkedin.com/in/jacobottesen/" target="_blank"><i class="fa fa-linkedin icon"></i></a>
+                    <a href="https://dribbble.com/jakeottesen" target="_blank"><i class="fa fa-dribbble icon"></i></a>
+                    <a href="mailto:ottesenjacob1994@gmail.com" target="_top"><i class="fas fa-envelope icon"></i></a>
 
                 </div>
 
             </div>
 
         </div>
-
 
 
         <div class='spacer'>
@@ -351,18 +355,26 @@
 
 
             <div class="smallspacer"></div>
-            <a href="https://blog.prototypr.io/lessons-learned-interning-w-a-ux-researcher-8e06e463367d" target="_blank">
-                <div class="row justify-content-center">
-                    <div class="col-12 ">
+            <div class="row justify-content-center">
+                <div class="col-12 ">
+                    <a href="https://blog.prototypr.io/lessons-learned-interning-w-a-ux-researcher-8e06e463367d" target="_blank">
                         <div class="imghover">
                             <img src="Artboard%20Copy%204.png" class="img-fluid img-style">
 
                         </div>
 
+                    </a>
+
+
+                    <br><br>
+                    <div class="row">
+                        <p class="col-12 casetitle">Lessons Learned: Interning w/ a UX Researcher</p>
 
                     </div>
+
                 </div>
-            </a>
+            </div>
+
 
         </div>
 
@@ -388,7 +400,18 @@
                                 <div class="text">UX Research @Workfront</div>
                             </div>
                         </div>
+
+                        <br><br>
                     </a>
+                    <div class="row">
+                        <p class="col-12 casetitle">Case Study: Mormon.org Chat Redesign</p>
+                        
+
+                    </div>
+
+
+
+
                 </div>
             </div>
 
@@ -412,6 +435,14 @@
                             <div class="text">UX Research @Workfront</div>
                         </div>
                     </div>
+
+                    <div class="smallspacer"></div>
+
+                    <div class="row">
+                        <p class="col-12 casetitle">Case Study: Walmart Auto App Concept (Coming Soon)</p>
+
+                    </div>
+
                 </div>
             </div>
 
@@ -425,19 +456,31 @@
 
 
             <div class="smallspacer"></div>
-            <a href="https://medium.com/@ottesenjacob1994/lime-scooter-app-concept-01-2e74191210b6" target="_blank">
-                <div class="row justify-content-center">
-                    <div class="col-12 ">
-                        <div class="imghover">
+
+            <div class="row justify-content-center">
+                <div class="col-12 ">
+
+                    <div class="imghover">
+                        <a href="https://medium.com/@ottesenjacob1994/lime-scooter-app-concept-01-2e74191210b6" target="_blank">
                             <img src="Artboard%20Copy%206.png" class="img-fluid img-style">
                             <div class="overlay">
                                 <div class="text">UX Research @Workfront</div>
                             </div>
-                        </div>
-                    </div>
-                </div>
+                        </a>
 
-            </a>
+
+                    </div>
+                    <br><br>
+
+                    <div class="row">
+                        <p class="col-12 casetitle">Case Study: Lime Scooter App — Reservations</p>
+
+                    </div>
+
+                </div>
+            </div>
+
+
             <div class="smallspacer"></div>
             <div class="row justify-content-center">
                 <div class="col-12 ">
@@ -449,11 +492,44 @@
                             </div>
                         </div>
                     </a>
+                    <br><br>
+
+                    <div class="row">
+                        <p class="col-12 casetitle">Designing a UI Design Daily</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="smallspacer"></div>
+            <div class="row justify-content-center">
+                <div class="col-12 ">
+
+                    <div class="imghover">
+                        <a href="https://blog.prototypr.io/case-study-lime-app-group-rides-87210fbdc" target="_blank">
+                            <img src="Artboard%20Copy%2010.png" class="img-fluid img-style">
+                            <div class="overlay">
+                                <div class="text">UX Research @Workfront</div>
+                            </div>
+                                </a>
+                    </div>
+                    <br><br>
+                    <div class="row">
+                        <p class="col-12 casetitle">Case Study: Lime Scooter App — Group Rides</p>
+
+                    </div>
+
                 </div>
             </div>
 
 
         </div>
+
+
+
+
+
+
 
 
         <div class='spacer'>
@@ -494,6 +570,10 @@
         </div>
 
 
+
+
+
+
         <div class='spacer'>
             <div class="row">
                 <h2 class="col-12">Wanna <strong>chat?</strong> <span class="ec ec-speech-balloon"></span></h2>
@@ -509,9 +589,9 @@
 
             </div>
         </div>
-        
-        
-        
+
+
+
         <div class="smallspacer"></div>
         <br>
         <div class="smallspacer"></div>
