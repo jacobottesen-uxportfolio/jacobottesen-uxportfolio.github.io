@@ -14,713 +14,682 @@
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,300,400,500,600,700" rel="stylesheet">
+
 
     <style>
         body {
-            font-family: 'Lato', sans-serif;
+            font-family: 'IBM Plex Sans', sans-serif;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 2;
+
+        }
+
+        h1 {
+            font-size: 40px;
+            font-weight: bold;
+
+        }
+
+
+        h3 {
+            font-size: 30px;
+            font-weight: 500;
+
+
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+
+        h4 {
+
+            font-size: 12px;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #676767;
+        }
+        
+        
+          h5 {
+
+            font-size: 16px;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #676767;
         }
 
         p {
             font-size: 16px;
 
+
         }
 
-        h1 {
-            font-size: 60px;
-            font-weight: bold;
-        }
-
-        h2 {
-            font-size: 30px;
-            font-weight: 300;
-        }
-
-        h3 {
-            font-size: 22px;
-            font-weight: 300;
-        }
 
         strong {
             font-weight: bold;
         }
 
         .row {
-            text-align: center;
-        }
-
-        .spacer {
-
-            margin-top: 16em;
-        }
-
-        a {
-            color: dimgray;
-        }
-
-
-        .img-style {
-            border-radius: 10px;
-
-        }
-
-
-        .img-style:hover {
-
-            border-radius: 10px;
-
-
-        }
-
-
-
-        .overlay {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 100%;
-            width: 100%;
-            display: none;
-            transition: .5s ease;
-            background-color: transparent;
-
-        }
-
-        .imghover:hover .overlay {
-            opacity: 1;
-        }
-
-
-
-
-
-        .imghover {
-            position: relative;
-            display: inline-block;
-            width: 25em;
-            height: 25em;
-            border-radius: 10px;
-            border-radius: 5px;
-            -webkit-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.03);
-            -moz-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.03);
-            box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.03);
-            border-radius: 5px;
-            -webkit-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, .5);
-            transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, .5);
-            webkit-filter: blur(0px);
-            /* Chrome, Safari, Opera */
-            filter: blur(0px);
-        }
-
-        .imghover::after {
-            content: "";
-            border-radius: 5px;
-            position: absolute;
-            z-index: -1;
-            top: 0;
-            border-radius: 10px;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            -webkit-box-shadow: 0px 11px 80px 0px rgba(0, 0, 0, 0.06);
-            -moz-box-shadow: 0px 11px 80px 0px rgba(0, 0, 0, 0.06);
-            box-shadow: 0px 11px 80px 0px rgba(0, 0, 0, 0.06);
-            opacity: 0;
-            -webkit-transition: all 0.7s cubic-bezier(0.165, 0.84, 0.44, .5);
-            transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, .5);
-
-        }
-
-        .imghover:hover {
-            -webkit-transform: scale(.96, .96);
-            transform: scale(.96, .96);
-        }
-
-
-
-        .imghover:hover::after {
-            opacity: 1;
-        }
-
-
-
-        .text {
-            color: black;
-            font-size: 30px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            -webkit-transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-            text-align: center;
-        }
-
-
-        .smallspacer {
-            margin-top: 2em;
-        }
-
-        #centertext {
-            width: 26em;
             text-align: left;
+
+        }
+
+        .imagesize {
+            width: 100%;
+            height: auto;
         }
 
 
-        #centertext1 {
-            width: 45em;
-            text-align: center;
+        .content {
+            width: 45%;
+            margin: 0 auto;
+            margin-top: 10em;
+            margin-bottom: 10em;
+
+        }
+
+        .huge {
+            font-size: 48px;
+            color: black;
         }
 
 
-        .quotes {
-            font-weight: 300;
+
+        .lgspacer {
+            padding-top: 5em;
+
         }
 
+        .smspacer {
+            padding-top: 2em;
 
-        .dates {
-            color: #BABABA;
-            font-weight: 300;
         }
 
+        .important {
+            background-color: #E8E8E8;
+            padding: 30px;
+        }
 
-        .icon {
+        .links {
+            color: #0278C0;
+
+        }
+        
+        
+           .icon {
             font-size: 20px;
             padding-left: 10px;
             padding-right: 10px;
+               color: black;
+        }
+        
+        
+        
+
+        .content1 {
+
+            margin-left: 15em;
+            margin-top: 10em;
+            padding-bottom: 10em;
+
         }
 
 
-        .smallerspacer {
-            margin-top: 1em;
+        .figcap {
+            padding-top: 10px;
+            font-size: 12px;
+            font-weight: 400;
+            text-align: center;
+            color: dimgrey;
+
         }
 
+        .topnav {
+            overflow: hidden;
 
-
-        .smallestspacer {
-            margin-top: .75em;
         }
 
-
-        .link {}
-
-
-        .link:hover {
+        .topnav a {
+            float: left;
+            color: black;
+            text-align: left;
+            padding-left: 2em;
+            padding-top: 1em;
             text-decoration: none;
-            color: #0056B3;
+            font-size: 20px;
+            position: fixed;
+            z-index: 10;
+        }
 
+        .bgcolor {
+            background-color: #F7F7F7;
+            padding-top: 0em;
+            padding-bottom: 6em;
         }
 
 
-        .casetitle {
-            color: #BABABA;
-            font-weight: 300;
-            font-size: 22px;
-        }
-
-
-
-        .btn {
-            position: relative;
+        .dark {
             color: white;
-            background-color: blue;
-            display: inline-block;
-            border-radius: 4px;
-            padding-left: 40px;
-            padding-right: 40px;
-            padding-bottom: 8px;
-            padding-top: 8px;
+            font-size: 16px;
             font-weight: 300;
+        }
 
+        .click {
+            background-color: #037AC4;
+            color: white;
+            border: white solid 1px;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
 
-            -webkit-box-shadow: 16px 19px 19px 0px rgba(22, 5, 255, 0.14);
-            -moz-box-shadow: 16px 19px 19px 0px rgba(22, 5, 255, 0.14);
-            box-shadow: 16px 19px 19px 0px rgba(22, 5, 255, 0.14);
-
-            -webkit-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, .5);
-            transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, .5);
 
         }
 
-        .btn::after {
+        .click:hover {
+            background-color: white;
+            color: black;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
 
-
-            opacity: 0;
-            -webkit-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, .5);
-            transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, .5);
 
         }
 
-        .btn:hover {
 
-            -webkit-box-shadow: 2px 7px 13px 0px rgba(22, 5, 255, 0.16);
-            -moz-box-shadow: 2px 7px 13px 0px rgba(22, 5, 255, 0.16);
-            box-shadow: 2px 7px 13px 0px rgba(22, 5, 255, 0.16);
+        #logo {
+            color: white;
+        }
+        
+        
+        
+     
+
+
+
+        .textcomp {
+            line-height: normal;
+
+            font-weight: 400;
         }
 
 
+        a.button1 {
+            border: solid black 1px;
+            padding: 10px 25px;
+            font-size: 14px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: background-color .5s;
+            color: inherit;
+            
 
-        .btn:hover::after {
-            opacity: 1;
+        }
+
+        a.button1:visited {
+            color: black;
+            
         }
 
 
+        a.button1:hover {
+
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            text-decoration:none;
+            
+
+
+        }
+        
+    
+    
+        
+          a.buttoncta {
+            background-color: black;
+              border: solid black 1px;
+            color: white;
+            padding: 10px 25px;
+            font-size: 14px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: background-color .5s;
+              margin-right: .5em;
+            
+
+        }
+        
+        
+        
+
+        a.buttoncta:visited {
+            color: black;
+            
+        }
+
+
+        a.buttoncta:hover {
+
+            background-color: transparent;
+            color: black;
+            cursor: pointer;
+            border: solid black 1px;
+            text-decoration:none;
+            
+            
+
+
+        }
+        
+
+        .container {
+            padding-right: 10em;
+            padding-left: 10em;
+
+        }
+        
+        
+        
+        a.toplinks {
+            text-decoration: none;
+            color: black;
+            
+        
+        }
+        
+        
+        a.toplinks:hover {
+            color: #1F4EFC;
+            
+        }
+
+
+        
+       
 
 
 
 
-
-
-
-
-        @media only screen and (max-width: 600px) {
-            h1 {
-                font-size: 25px;
-                font-weight: bold;
+        @media screen and (min-width: 300px) {
+            .content {
+                width: 90%;
+                margin: 0 auto;
+                margin-top: 5em;
+                margin-bottom: 10em;
             }
 
-            h2 {
-                font-size: 20px;
-            }
 
-
-            h3 {
-                font-size: 16px;
-                font-weight: 300;
-            }
-
-            body {
-                padding: 20px;
-            }
-
-            .imghover {
-
-                width: 20em;
-                height: 20em;
+            .container {
+                padding-right: 1em;
+                padding-left: 1em;
 
             }
 
-            .spacer {
 
-                margin-top: 10em;
+            .topnav a {
+                
+                position: relative;
+               
+            }
+            
+            
+             #introtext {
+                 line-height: normal;
+                 font-size: 15px;
+            
+        }
+
+
+        }
+
+        @media screen and (min-width: 600px) {
+            .content {
+                width: 60%;
+                margin: 0 auto;
+                margin-top: 5em;
+                margin-bottom: 10em;
             }
 
-            #centertext {
-                width: 25em;
-                text-align: left;
-                padding-left: 30px;
-                padding-right: 30px;
+
+            .container {
+                padding-right: 0em;
+                padding-left: 0em;
+
             }
 
 
-            #centertext1 {
-                width: 25em;
-                text-align: center;
-                padding-left: 30px;
-                padding-right: 30px;
+        }
+
+        @media screen and (min-width: 1000px) {
+            .content {
+                width: 45%;
+                margin: 0 auto;
+                margin-top: 5em;
+                margin-bottom: 10em;
             }
 
+            .container {
+                padding-right: 10em;
+                padding-left: 10em;
 
-
-
+            }
         }
     </style>
 
 
-    <script>
-        $(document).ready(function(): {
-            $('.img-style').hover(function() {
-                $(this).css("opacity", "0.9");
-            }, function() {
-                $(this).css("opacity", "1");
-
-
-
-            });
-        });
-    </script>
 
 </head>
 
 <body>
 
+    <section class="bgcolor">
+        <div class="topnav row">
+
+            <a href="index.html" class="col-md"><strong>J/O</strong></a>
+        </div>
+
+        
+
+        <div class="lgspacer"></div>
+        <div class="container">
+
+
+
+            <div class="row">
+
+                <h1 class="huge col-md-12">I'm Jake, a product designer <span class="ec ec-wave"></span></h1>
+
+            </div>
+
+            <div class="row">
+                <p id="introtext" class="col-md-12">I strive to be an egoless, self-starting <span class="ec ec-chart-with-upwards-trend"></span>, team playing <span class="ec ec-dancing-women"></span>, mustache growing <span class="ec ec-man"></span>, outdoorsy dude <span class="ec ec-evergreen-tree"></span>.
+            
+            </div>
+            
+            
+            <div class="row">
+               
+                
+                
+                <h5 class="col-md-10">
+                    
+                    <a href="https://www.linkedin.com/in/jacobottesen/"  class="toplinks" target="_blank">Linkedin</a> | 
+                    <a href="https://www.behance.net/ott1200693db" class="toplinks" target="_blank">Behance</a> | 
+                    <a href="https://dribbble.com/jakeottesen"  class="toplinks" target="_blank">Dribbble</a> | 
+                    <a href="https://medium.com/@ottesenjacob1994"  class="toplinks" target="_blank">Medium</a></h5>
+            
+                
+            </div>
+    
+            
+             
+           <br>
+            
+            
+            
+            <!-- Not sure if I need this -->
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="mailto:ottesenjacob1994@gmail.com" class="buttoncta">
+                Get in Touch
+                    </a>
+                    <a href="Resume%20Sep%202018%20Copy.pdf"" download" class="button1">
+                Resume
+                    </a>
+                    
+                    
+                </div>
+
+            </div>
+            
+            
+
+        </div>
+
+    </section>
+
+
+    <div class="lgspacer"></div>
     <div class="container">
 
-        <div class='spacer'>
-            <div class="row">
-                <h1 class="col-12">I'm Jake, a product designer <span class="ec ec-wave"></span></h1>
-            </div>
+        <h1>Case Studies</h1>
 
-            <div class="row justify-content-center">
-                <div class="row">
-                    <h3 class="col-12">I strive to be an egoless, self-starting <span class="ec ec-chart-with-upwards-trend"></span>, team playing <span class="ec ec-raised-hands"></span>, mustache growing, outdoorsy dude <span class="ec ec-sunglasses"></span></h3>
+        <div class="smspacer"></div>
 
+        <div class="row">
 
+            <div class="col-md">
+                <img src="Artboard.png" class="img-fluid">
 
+                <div class="smspacer"></div>
+                <h4>Product Design</h4>
+                <h3>Lime App Reservations</h3>
+                <p class="textcomp">Designed and tested a feature allowing Lime riders to have a more depend form of transportation.</p>
 
-
-                </div>
-            </div>
-
-
-
-
-            <div class="smallerspacer"></div>
-            <div class="row justify-content-center">
-
-                <div class="col-12 ">
-
-                    <a href="https://medium.com/@ottesenjacob1994" target="_blank"><i class="fa fa-medium icon"></i></a>
-                    <a href="https://www.behance.net/ott1200693db" target="_blank"><i class="fa fa-behance icon"></i></a>
-                    <a href="https://www.linkedin.com/in/jacobottesen/" target="_blank"><i class="fa fa-linkedin icon"></i></a>
-                    <a href="https://dribbble.com/jakeottesen" target="_blank"><i class="fa fa-dribbble icon"></i></a>
-                    <a href="mailto:ottesenjacob1994@gmail.com" target="_top"><i class="fas fa-envelope icon"></i></a>
-
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-
-
-
-        <div class='spacer'>
-            <div class="row">
-                <h2 class="col-12">I currently work as a <strong>UX Designer</strong> for my university <span class="ec ec-books"></span></h2>
-            </div>
-            <div class="row">
-                <p class="col-12 dates">Fall 2018</p>
-            </div>
-
-
-            <div class="smallspacer"></div>
-            <div class="row justify-content-center">
-                <div class="col-12 ">
-                    <a href="https://medium.com/@ottesenjacob1994/case-study-byu-i-grad-plan-redesign-3e129fdc870d" target="_blank">
-                        <div class="imghover">
-                            <img src="Gradplanner.png" class="img-fluid img-style">
-
-                        </div>
+                <a href="https://blog.prototypr.io/lime-scooter-app-concept-01-2e74191210b6" target="_blank" class="button1">
+                View Case Study
                     </a>
-                    <div class="smallspacer"></div>
-
-                    <div class="row">
-                        <p class="col-12 casetitle">Case Study: Grad Planner (In-Progress)</p>
-
-                    </div>
-
-                </div>
-
+                <div class="smspacer"></div>
 
             </div>
 
+            <div class="col-md-1"></div>
+            
+            
+    
 
-        </div>
+            <div class="col-md">
+                <img src="mormonorg_chat.png" class="img-fluid">
 
+                <div class="smspacer"></div>
+                <h4>Product Design</h4>
+                <h3>Mormon.org Chat</h3>
 
+                <p class="textcomp">Redesigned the chat experience on a religious site that receives over 2 million users each monthly to help to increase conversions.
+</p>
 
-
-
-
-
-
-        <div class='spacer'>
-            <div class="row">
-                <h2 class="col-12">Previously, I was a <strong>UX Research/Design Intern</strong> at <a href="https://www.workfront.com/" class="link">Workfront</a> <span class="ec ec-lion"></span></h2>
-            </div>
-            <div class="row">
-                <p class="col-12 dates">Summer 2018</p>
-            </div>
-
-
-            <div class="smallspacer"></div>
-            <div class="row justify-content-center">
-
-                <div class="col-12 ">
-                    <a href="https://blog.prototypr.io/lessons-learned-interning-w-a-ux-researcher-8e06e463367d" target="_blank">
-                        <div class="imghover">
-                            <img src="Artboard%20Copy%204.png" class="img-fluid img-style">
-
-                        </div>
+                <a href="https://blog.prototypr.io/case-study-mormon-org-chat-299f618c8fe7" target="_blank" class="button1">
+                View Case Study
                     </a>
-                    <div class="smallspacer"></div>
-
-                    <div class="row">
-                        <p class="col-12 casetitle">Lessons Learned: Interning w/ a UX Researcher</p>
-
-                    </div>
-
-                </div>
+                <div class="smspacer"></div>
             </div>
+
+
+
+        </div>
+
+        <div class="smspacer"></div>
+
+        <div class="row">
+
+            <div class="col-md">
+                <img src="autoapp.png" class="img-fluid">
+
+                <div class="smspacer"></div>
+                <h4>Product Thinking</h4>
+                <h3>Auto Reminder App</h3>
+                <p class="textcomp">Presented a product idea in a business competition and tried testing the idea in the market. <strong>(In-Progress)</strong></p>
+
+                <a href="https://blog.prototypr.io/business-competition-auto-maintenance-reminder-app-be9dedce6b19" target="_blank" class="button1">
+                View Case Study
+                    </a>
+                <div class="smspacer"></div>
+
+            </div>
+
+            <div class="col-md-1"></div>
+
+            <div class="col-md">
+                <img src="lime-group.png" class="img-fluid">
+
+                <div class="smspacer"></div>
+                <h4>Product Design</h4>
+                <h3>Lime App Group Rides</h3>
+                <p class="textcomp">Designed and tested a feature allowing a group of Lime riders to rent multiple scooters on one phone. </p>
+
+                <a href="https://blog.prototypr.io/case-study-lime-app-group-rides-87210fbdc" target="_blank" class="button1">
+                View Case Study
+                    </a>
+                <div class="smspacer"></div>
+            </div>
+
+
+
+
+        </div>
+        
+        
+        <div class="smspacer"></div>
+
+        <div class="row">
+
+            <div class="col-md">
+                <img src="research_workfront.png" class="img-fluid">
+
+                <div class="smspacer"></div>
+                <h4>UX Research</h4>
+                <h3>Research @Workfront</h3>
+                <p class="textcomp">Some of the lessons I learned interning with a UX researcher at Workfront.
+                    
+                 </p>
+
+                <a href="https://blog.prototypr.io/lessons-learned-interning-w-a-ux-researcher-8e06e463367d" target="_blank" class="button1">
+                View Article
+                    </a>
+                <div class="smspacer"></div>
+
+            </div>
+
+            <div class="col-md-1"></div>
+
+            <div class="col-md">
+                <img src="grad_planner.png" class="img-fluid">
+
+                <div class="smspacer"></div>
+                <h4>Product Design</h4>
+                <h3>Grad Planner Redesign</h3>
+                <p class="textcomp">Redesigning a planning tools used by +18,000 students at BYU-Idaho. <strong>(In-Progress)</strong></p>
+
+                <a href="https://medium.com/@ottesenjacob1994/case-study-byu-i-grad-plan-redesign-3e129fdc870d" target="_blank" class="button1">
+                View Case Study
+                    </a>
+                <div class="smspacer"></div>
+            </div>
+
+
 
 
         </div>
 
 
+        <div class="lgspacer"></div>
+        <h1>Articles</h1>
 
+        <div class="smspacer"></div>
 
+        <div class="row">
 
+            <div class="col-md">
+                <img src="portfolio_mistakes.png" class="img-fluid">
 
-
-
-
-        <div class='spacer'>
-            <div class="row">
-                <h2 class="col-12">Before that, I was a <strong>UX Design Intern</strong> at <a href="https://www.boncom.com/" class="link">Boncom</a></h2>
-            </div>
-            <div class="row">
-                <p class="col-12 dates">Winter 2018</p>
-            </div>
-
-            <div class="smallspacer"></div>
-
-            <div class="row justify-content-center">
+                <div class="smspacer"></div>
+                <h4>Product Design</h4>
+                <h3>Portfolio Mistakes of UX Beginners</h3>
                 
-                <div class="col-12 ">
-                    <a href="https://blog.prototypr.io/case-study-mormon-org-chat-299f618c8fe7" target="_blank">
-                        <div class="imghover">
-                            <img src="Artboard%20Copy%205.png" class="img-fluid img-style">
 
-                        </div>
+                <a href="https://blog.prototypr.io/portfolio-mistakes-of-ux-beginners-e516014a1098" target="_blank" class="button1">
+                View Article
                     </a>
-                    <div class="smallspacer"></div>
+                <div class="smspacer"></div>
 
-                    <div class="row">
-                        <p class="col-12 casetitle">Case Study: Mormon.org Chat Redesign</p>
+            </div>
 
-                    </div>
+            <div class="col-md-1"></div>
 
-                </div>
+            <div class="col-md">
+                <img src="intern_tips.png" class="img-fluid">
+
+                <div class="smspacer"></div>
+                <h4>Product Design</h4>
+                <h3>4 Tips For Your UX Design Internship</h3>
                 
-                
-            </div>
 
-        </div>
-
-
-        <div class='spacer'>
-            <div class="row">
-                <h2 class="col-12">I enjoy <span class="ec ec-grinning"></span> <strong>solving problems</strong> around me</h2>
-            </div>
-
-
-            <div class="smallspacer"></div>
-            <br>
-            <div class="smallspacer"></div>
-
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm">
-                        <div class="imghover">
-                            <a href="https://medium.com/@ottesenjacob1994/lime-scooter-app-concept-01-2e74191210b6" target="_blank">
-                            <img src="Artboard%20Copy%206.png" class="img-fluid img-style">
-                            
-                        </a>
-
-
-                        </div>
-                        <br><br>
-
-                        <div class="row">
-                            <p class="col-12 casetitle">Lime Scooter App — Reservations</p>
-
-                        </div>
-                    </div>
-                    <div class="col-sm">
-                        <div class="imghover">
-                            <a href="https://blog.prototypr.io/case-study-lime-app-group-rides-87210fbdc" target="_blank">
-                            <img src="Artboard%20Copy%2010.png" class="img-fluid img-style">
-                            
-                                </a>
-                        </div>
-                        <br><br>
-                        <div class="row">
-                            <p class="col-12 casetitle">Lime Scooter App — Group Rides</p>
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-
-
-
-
-        <div class='spacer'>
-            <div class="row">
-                <h2 class="col-12">I recently entered Rexburg's <strong> Big Idea Competition</strong> <span class="ec ec-reminder-ribbon"></span></h2>
-            </div>
-
-            <div class="row">
-                <p class="col-12 dates">Fall 2018</p>
-            </div>
-            <div class="smallspacer"></div>
-            <div class="row justify-content-center">
-                <div class="col-12 ">
-                    <a href="https://medium.com/@ottesenjacob1994/business-competition-auto-maintenance-reminder-app-be9dedce6b19" target="_blank">
-                        <div class="imghover">
-                            <img src="Artboard%20Copy%207.png" class="img-fluid img-style">
-
-                        </div>
+                <a href="https://blog.prototypr.io/4-tips-for-your-ux-design-internship-842c15f6a97e" target="_blank" class="button1">
+                View Article
                     </a>
-                    <div class="smallspacer"></div>
-
-                    <div class="row">
-                        <p class="col-12 casetitle">Case Study: Auto Reminder (In-Progress)</p>
-
-                    </div>
-
-                </div>
+                <div class="smspacer"></div>
             </div>
+
+
+
 
         </div>
 
 
 
 
+        <div class="lgspacer"></div>
 
-        <div class='spacer'>
-            <div class="row">
-                <h2 class="col-12">I also like writing <span class="ec ec-writing-hand"></span> my thoughts on <strong>Medium</strong></h2>
-            </div>
+        <div class="smspacer"></div>
+        <h1>About Me</h1>
 
-
-            <div class="smallspacer"></div>
-            <br>
-            <div class="smallspacer"></div>
-
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm">
-                        <div class="imghover">
-                            <a href="https://medium.com/@ottesenjacob1994/portfolio-mistakes-of-ux-beginners-e516014a1098" target="_blank">
-                            <img src="uxmistakes.png" class="img-fluid img-style">
-                            
-                        </a>
-
-
-                        </div>
-                        <br><br>
-
-                        <div class="row">
-                            <p class="col-12 casetitle">Portfolio Mistakes of UX Beginners</p>
-
-                        </div>
-                    </div>
-                    <div class="col-sm">
-                        <div class="imghover">
-                            <a href="https://blog.prototypr.io/4-tips-for-your-ux-design-internship-842c15f6a97e" target="_blank">
-                            <img src="uxtips.png" class="img-fluid img-style">
-                            
-                                </a>
-                        </div>
-                        <br><br>
-                        <div class="row">
-                            <p class="col-12 casetitle">4 Tips For Your UX Design Internship</p>
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-
-
-
-
-
-
-
-
-
-        <div class='spacer'>
-            <div class="row">
-                <h2 class="col-12">This is <strong>me</strong> <span class="ec ec-point-down"></span></h2>
-            </div>
-            <div class="smallspacer"></div>
-            <div class="row justify-content-center">
-                <div class="col-12 ">
-                    <div class="imghover">
-                        <img src="Artboard%20Copy%208.png" class="img-fluid img-style">
-                        <div class="overlay">
-                            <div class="text">UX Research @Workfront</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="smallspacer"></div>
-
-            <div class="row justify-content-center">
-                <div class="row">
-
-                    <p class="col-12" id="centertext"> I am currently a senior at BYU-Idaho (Online) pursuing a BS in Web Design & Development and living in Salt Lake City. When I am not doing UX work, you will find me eating Trader Joe's cookie butter, hiking, doing photography, camping, or growing a mustache
-                        <br><br> I started college as a pre-physical therapy major due to multiple career assessments I took. After joining the <strong>entrepreneurship society</strong> on campus, I learned a new term called <strong>“UX design.”</strong> I researched the crap out of it and fell in love with the iterative process and methodologies of UX.
-                        <br><br> Soon after that, I changed my degree to web design & development. Since then it has been a roller coaster of <strong>reading blogs, personal projects, internships, and design conferences.</strong>
-
-                        <br><br> Currently, I work as a UX designer for the university I attend, working on <strong>redesigning a tool used by 18,000+ students</strong> to help them plan out classes for graduation. Previously, I interned at Workfront as a UX research/design intern. There, I learned about the importance of understanding <strong>how design fits into the business.</strong> Before that I interned at Boncom, a design agency focused on non-profits in Salt Lake City.
-
-                        <br><br>
-                        <strong>I am looking for future opportunities to <span class="ec ec-chart-with-upwards-trend"></span> grow.</strong>
-
-
-
-
+        <div class="row">
+            <div class="col-md-6">
+                <p class="textcomp">
+                    I am currently a senior at BYU-Idaho (Online) pursuing a <strong>BS in Web Design & Development</strong> and living in Salt Lake City. When I am not doing UX work, you will find me eating Trader Joe's cookie butter, hiking, doing photography, camping, or growing a mustache.
+                    <br><br>
+                    
+                    I started college as a pre-physical therapy major due to multiple career assessments I took. After joining the entrepreneurship society on campus, I learned a new term called “UX design.” I researched the crap out of it and fell in love with the iterative process and methodologies of UX. Soon after that, I changed my degree to web design & development. 
+                    
+                    <br><br>Since then it has been a roller coaster of reading blogs, personal projects, internships, and design conferences.
+                    <br><br>
+                    <strong>I am looking for future opportunities to <span class="ec ec-chart-with-upwards-trend"></span> grow.</strong>
                     </p>
-                </div>
+
+
+            </div>
+            
+            
+            
+            <div class="col-md-6">
+                <img src="me.png" class="imagesize">
+                    
+
+
             </div>
 
         </div>
-
-
-
-
-
-
-
-
-
-        <div class='spacer'>
-            <div class="row">
-                <h2 class="col-12">Wanna <strong>chat?</strong> <span class="ec ec-speech-balloon"></span></h2>
-            </div>
-            <div class="smallspacer"></div>
-            <div class="row justify-content-center">
-                <a href="mailto:ottesenjacob1994@gmail.com" target="_top">
-                    <div class="col-12 ">
-                        <p class="btn">Email Me</p>
-
-                    </div>
-                </a>
-
-            </div>
-        </div>
-
-
-
-        <div class="smallspacer"></div>
-        <br>
-        <div class="smallspacer"></div>
-
+        <div class="lgspacer"></div>
 
 
 
 
 
     </div>
-
-
-
-
-
 
 
 
