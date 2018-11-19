@@ -165,6 +165,11 @@
                 margin-bottom: 10em;
             }
 
+            .imagesize {
+                width: 100%;
+                height: auto;
+            }
+
         }
 
         @media screen and (min-width: 600px) {
@@ -193,7 +198,7 @@
 <body>
 
     <div class="topnav">
-        <a class="active" href="index.html"><strong>J/O</strong></a>
+        <a class="active" href="index.html"><strong>J/Ottesen</strong></a>
     </div>
 
 
@@ -201,12 +206,12 @@
         <div class="row justify-content-center">
             <div class="col-md-7">
                 <div class="smspacer"></div>
-                <h1>Lime App - Group Rides</h1>
+                <h1>Auto Maintenance App</h1>
                 <div class="smspacer"></div>
 
                 <figure>
-                    <img src="images/lime_reserve/limeappsmall%20copy.png" class="imagesize">
-                    <figcaption class="figcap"><strong>Disclaimer:</strong> I am not an employee of Lime and this does not represent the official strategic direction of Lime.</figcaption>
+                    <img src="images/autoapp/autoapp.png" class="imagesize">
+
                 </figure>
                 <div class="smspacer"></div>
                 <div class="important">
@@ -214,92 +219,85 @@
                     <ul>
                         <li><strong>My Role: </strong> UX Design, Research</li>
                         <li><strong>Tools:</strong> Sketch, Adobe XD</li>
-                        <li><strong>Timeline:</strong> Aug 2018 (2 Weeks)</li>
+                        <li><strong>Timeline:</strong> Aug 2018 - Nov 2018</li>
                         <li><strong>Deliverables:</strong> Sketches, interactive XD prototype, research findings</li>
-                        <li><strong>Team:</strong> Just me, myself and I</li>
+                        <li><strong>Team:</strong> Jacob Ottesen & Nathan Jones</li>
                     </ul>
                 </div>
 
 
                 <div class="smspacer"></div>
                 <h1>The Problem <span class="ec ec-tired-face"></span></h1>
-                <p>Lime riders traveling in groups have no way to rent multiple scooters on a single phone.
-                </p>
+
+
+                <ul>
+                    <li>Auto maintenance chains struggle with customer retention</li>
+                    <li>Consumer often forget when to get important maintenance done</li>
+
+                </ul>
+
 
 
 
                 <div class="smspacer"></div>
                 <h1>The Solution <span class="ec ec-grinning"></span></h1>
-                <p>A feature within Lime that allows riders rent multiple scooters on a single phone.
+                <p>A mobile application that connects to an <a href="https://www.lifewire.com/what-is-obd-ii-scanner-534868" target="_blank">ODB2 scanner</a> which retrieves data from the consumer’s car. This data is translated into reminders and alerts for maintenance through push notifications. The application connects consumers needs to auto maintenance businesses by offering rewards for prompt scheduling and completion of maintenance.
                 </p>
 
 
                 <div class="smspacer"></div>
                 <h1>My Approach <span class="ec ec-sunglasses"></span></h1>
                 <div class="smspacer"></div>
-                <img src="images/lime_reserve/lime_process.png" class="imagesize">
+                <img src="images/autoapp/autoapp_process.png" class="imagesize">
                 <div class="smspacer"></div>
 
                 <h2>Research</h2>
-                <p>Before diving into any problem I always strive to find out if this problem is worth solving and then understand the problem more deeply.
-
-                    <br><br>To start my research I went to the <strong>app reviews</strong> for Lime to see if other customers are facing this same problem. As result, I found many customers complaining about the issue stated above. From here I wanted to learn more about the specific use cases directly from the users, so <strong>I interviewed 6 Lime riders</strong> to dig deeper. I also found a <strong>survey</strong> conducted by Lime in San Francisco that gave me more information about Lime customers.
-
-                </p>
-
-                <img src="images/lime_reserve/reviews.png" class="imagesize">
 
 
-                <figure>
-                    <img src="images/lime_reserve/lime-survey.png" class="imagesize">
-                    <a href="https://www.li.me/hubfs/Lime%20San%20Francisco%20Scooter%20Survey%20Findings.pdf" target="_blank">
-                        <figcaption class="figcap">Lime Survey</figcaption>
-                    </a>
-                </figure>
+
+                <h4>User Interviews</h4>
+                <p>By performing user interviews with 15 people, we found out some of the pain points of that consumers face when they need maintenance done:</p>
+
+                <ul>
+
+                    <li><strong>Hassle-Free and Quick Scheduling </strong> — Aka Get it done quick.<br> Users don’t like to call around to schedule auto maintenance, they desire to have a hassle-free intuitive way to schedule maintenance.
+                    </li>
+                    <li><strong>Forgetful Car Owners </strong> —Aka When did I get my last oil change?<br> Users find it hard to remember when the last time they had specific maintenance done on their vehicle.
+                    </li>
+                    <li><strong>Current solutions aren’t working </strong>  — Aka The competition sucks. <br> The two main solutions are window stickers and emails. Some people don’t like stickers on their window shield and other don’t look at their email enough.
+                    </li>
+                    <li><strong>Taking care of investments </strong>   — Aka I want my car to last for a long time.<br> The frugal group of users wants to make sure that their long-term auto investment will last as long as possible.
+                    </li>
+
+                </ul>
+
+                <div class="smspacer"></div>
+                <h4>Expert Interviews</h4>
+                <p>We also performed interviews with auto maintenance experts to understand more. We learned that the only motivation keeping customer retention is customer service, window stickers and emails.</p>
+
+                <div class="smspacer"></div>
+                <h4>Market Research</h4>
+                <p>As you can see here, the market does currently have apps that attempt to fulfill consumer needs. But their ratings show that consumers are not happy and as a result, do not use them.</p>
+                <div class="smspacer"></div>
+                <img src="images/autoapp/app_reviews.png" class="imagesize">
+                <div class="smspacer"></div>
+
+
+
+
+
+
+
 
 
 
                 <div class="smspacer"></div>
                 <h2>Define</h2>
-              
-                
-                <div class="important">
-                    <h4>Research Findings:</h4>
-                    <ul>
-                        <li>Lime riders want the ability to <strong>rent multiple scooters</strong> for a group on one phone.</li>
-                        <li>In a survey conducted by Lime, results showed that <strong>10% of riders</strong> are using scooters for recreation.</li>
-                       
-                    </ul>
-                </div>
-                
-                
-                <div class="smspacer"></div>
-                
-                <h4>Discovered Use Cases:</h4>
-                    <ul>
-                        
-                        
-                        <li>A group of friends wants to go ride scooters together, but one friend’s phone is dead</li>
-                        <li>A group of friends wants to go ride scooters together, but the payment info doesn’t work on one of the friend’s phones</li>
-                        <li>A group of friends wants to go ride scooters together, but the data isn’t working on a friends phone so they can’t download the app</li>
-                       
-                    </ul>
-                <div class="smspacer"></div>
-                <div class="important">
-                    <h4>Why solve this problem?</h4>
-                    <p>Solving this problem could help benefit the business and customer:</p>
-                    <ul>
-                        <li><strong>New Users</strong> - By focusing on recreation Lime riders as the target market for this project, Lime will be able to provide a better experience for new or potential Lime riders.</li>
-                        <li><strong>Product differentiation</strong> - Currently, other Lime competitors such as Bird & Spin do not allow users to rent multiple scooters on one phone.</li>
-                       <li><strong>Ease of use</strong> - Helping serve these specific edge cases would create a simple solution for Lime riders looking to ride in groups for recreation.</li>
-                    </ul>
-                </div>
-        
-                
-                
 
-                <div class="smspacer"></div>
-                <p>The persona for this problem is focused on riding Lime scooter for recreation rather than for communting.
+
+                <p>Based on the customer interviews I had, I built a persona & journey map to refer back to throughout my process.
+
+
                 </p>
                 <img src="images/lime_reserve/lime_persona.png" class="imagesize">
                 <div class="smspacer"></div>
@@ -308,10 +306,31 @@
 
 
                 <h2>Ideate</h2>
-                <p>After understanding the users & problem deeper, I wrote down as many ideas as possible (even the crazy ones) on a whiteboard to help me think of different ways of solving the problem. Then, I clustered the ideas into similar themes and sections.
+                <p>To start the ideation process, we wrote down all the ideas we could think of. This helped us to not narrow down to the first idea we could think of. Here are some of those ideas:
                 </p>
 
-                ideas image!!!!!!!!
+                <div class="important">
+                    <h4>Idea Generation</h4>
+                    <ul>
+                        <li>Chat bot connected to maintenance chain (ask it questions, maintenance reminders)</li>
+                        <li>Text messaging reminders from maintenance chain</li>
+                        <li>Scheduling on mobile device</li>
+                        <li>Maintenance reminder dashboard</li>
+                        <li>Incentives? 30% off if scheduled in 3 days?</li>
+                        <li>Coupons? </li>
+                        <li>Rewards systems </li>
+                        <li>Saved money offer time </li>
+                        <li>Car Alerts with recommendations</li>
+                        <li>Level of severity for alerts</li>
+
+                    </ul>
+
+                </div>
+                <div class="smspacer"></div>
+
+
+                <img src="images/lime_reserve/whiteboarding.JPG" class="imagesize">
+                <div class="smspacer"></div>
 
 
                 <p><strong>Potential feature solution: </strong>When Lime riders reach a certain distance from the scooter selected, the app will give them an option to reserve the scooter for a certain price.</p>
@@ -321,7 +340,25 @@
 
                 <div class="smspacer"></div>
 
-               
+                <div class="important">
+                    <h4>Why this idea?</h4>
+                    <p>To me I feel like there are a few main <strong>value propositions</strong> for the business and the end customer:</p>
+
+                    <ul>
+                        <li><strong>Customer trust  — </strong> with the ability to guarantee an available scooter, Lime riders will trust the service as a dependable way of transportation.</li>
+                        <li><strong>Profit maximization  — </strong> through unused scooters being reserved for a price, the business will increase revenue.</li>
+                        <li><strong>Product differentiation  — </strong> through creating a more reliable form of transportation this feature will help separate Lime from other scooter competitors such as Bird or Spin.</li>
+                    </ul>
+
+                </div>
+
+
+                <div class="smspacer"></div>
+                <h4>Storyboarding</h4>
+
+                <img src="images/lime_reserve/storyboard.png" class="imagesize">
+
+
 
                 <div class="smspacer"></div>
 
@@ -393,12 +430,51 @@
 
                 <div class="smspacer"></div>
                 <div class="row justify-content-center">
-                    <img src="delete%20scooter.gif" class="gifsize">
+                    <img src="images/lime_reserve/first_time.gif" class="gifsize">
+
+                </div>
+                <div class="smspacer"></div>
+
+                <p>After the user has interacted with the feature for the first time the app will just give the option to reserve for $3.</p>
+
+
+                <div class="smspacer"></div>
+                <div class="row justify-content-center">
+                    <img src="images/lime_reserve/second_time.gif" class="gifsize">
 
                 </div>
 
+                <div class="smspacer"></div>
+                <p>I added a way for users to turn on/off this feature in the settings page.</p>
+                <div class="smspacer"></div>
+                <div class="row justify-content-center">
+                    <img src="images/lime_reserve/turn_off.gif" class="gifsize">
+
+                </div>
+
+                <div class="smspacer"></div>
+                <h2>My Successes <span class="ec ec-thinking"></span></h2>
+
+                <p>After working on this case study I sent my work over to a senior designer at Lime and this is the reply I received:</p>
 
 
+                <div class="smspacer"></div>
+
+                <img src="images/lime_reserve/lime_reply.png" class="imagesize">
+
+
+                <div class="smspacer"></div>
+                <div class="important">
+                    <h4>Lessons Learned:</h4>
+                    <ul>
+                        <li>Understanding the users and problem deeply in the beginning of a project can go a long way</li>
+                        <li>If you have an idea make sure you can talk about the why of the business</li>
+                        <li>I found it helpful to write down "things to consider" when deciding on a potential solution</li>
+
+
+                    </ul>
+
+                </div>
 
 
 
@@ -410,10 +486,7 @@
     <div class="lgspacer"></div>
 
 
-    <div class="importantclick">
-        <p>Next Project</p>
-        <h1>Mormon.org Chat Redesign</h1>
-    </div>
+
 
 
 
