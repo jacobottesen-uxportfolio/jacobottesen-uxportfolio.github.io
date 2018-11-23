@@ -87,6 +87,17 @@
 
         }
 
+        .quote {
+            font-size: 20px;
+            margin: 2em;
+            font-weight: 400;
+            background: #f9f9f9;
+            border-left: 2px solid black;
+            padding-left: 30px;
+
+
+        }
+
 
 
         .lgspacer {
@@ -170,6 +181,7 @@
                 height: auto;
             }
 
+
         }
 
         @media screen and (min-width: 600px) {
@@ -189,7 +201,6 @@
                 margin-bottom: 10em;
             }
         }
-
     </style>
 
 
@@ -229,7 +240,7 @@
 
                 <div class="smspacer"></div>
                 <h1>The Problem <span class="ec ec-tired-face"></span></h1>
-                <p>Lime riders in a time crunch have no way to ensure that they can find an available scooter.
+                <p>Lime riders in a time crunch have no way to ensure that they can find and rent an available scooter.
                 </p>
 
 
@@ -241,8 +252,8 @@
 
 
                 <div class="smspacer"></div>
-                <h1>My Approach <span class="ec ec-sunglasses"></span></h1>
-                <div class="smspacer"></div>
+                <h1>My Process <span class="ec ec-sunglasses"></span></h1>
+                
                 <img src="images/lime_reserve/lime_process.png" class="imagesize">
                 <div class="smspacer"></div>
 
@@ -263,11 +274,7 @@
                     </a>
                 </figure>
 
-
-
                 <div class="smspacer"></div>
-                <h2>Define</h2>
-
 
                 <div class="important">
                     <h4>Research Findings:</h4>
@@ -279,16 +286,40 @@
                     </ul>
                 </div>
 
+
                 <div class="smspacer"></div>
-                <p>Based on the customer interviews I had, I built a persona & journey map to refer back to throughout my process.
 
 
-                </p>
+                <h2>Define</h2>
+
+
+
+                <p>Based on the research, I went through multiple revisions of different problem statements to help to me have a clear understanding of the problem to solve.  After that I built a persona & journey map to refer back to throughout my process. </p>
+                <div class="important">
+                    <h4>Problem Statement</h4>
+                   <p>How might Lime (the scooter company) help users in a time crunch ensure that they can find and rent an available scooter.</p>
+                </div>
+                
+                <div class="smspacer"></div>
+             
+                
+                
                 <img src="images/lime_reserve/lime_persona.png" class="imagesize">
                 <div class="smspacer"></div>
                 <img src="images/lime_reserve/lime_JM.png" class="imagesize">
                 <div class="smspacer"></div>
 
+                <div class="smspacer"></div>
+                
+                <div class="important">
+                    <h4>User Quotes:</h4>
+
+                    <div class="quote">“I walked 2.5 miles to my destination, chasing 3 different scooters on the way. As I approached the third one, I watched someone 10’ in front of me take the scooter.”</div>
+
+                    <div class="quote">“I’ve walked FOUR miles in downtown okc just to try to get one, and every time, it gets taken. This is extremely frustrating. ”</div>
+                </div>
+
+                <div class="smspacer"></div>
 
                 <h2>Ideate</h2>
                 <p>After understanding the users & problem deeper, I wrote down as many ideas as possible (even the crazy ones) on a whiteboard to help me think of different ways of solving the problem. Then, I clustered the ideas into similar themes and sections.
@@ -340,7 +371,7 @@
 
                 <div class="smspacer"></div>
                 <h4>Reservations - Pricing breakdown</h4>
-                <p>Currently, Lime scooters cost $1.00 to unlock and $0.15 a minute to continue riding. If the rider can reserve the scooter from 0.5 miles away then the price of the reservation depends on how long it takes for the rider to get to the scooter. If the average rider takes 15 mins to walk 0.5 to the scooter than that would cost 15 mins * $0.15 = $2.25. Therefore, a fair price for a reservation could be $3.00. That way the business would make an extra $0.75 per reservation. </p>
+                <p>Currently, Lime scooters cost <strong>$1.00 to unlock</strong> and <strong>$0.15 a minute to continue riding</strong>. If the rider can reserve the scooter from 0.5 miles away then the price of the reservation depends on how long it takes for the rider to get to the scooter. If the average rider takes 15 mins to walk 0.5 to the scooter than that would cost <strong>15 mins * $0.15 = $2.25.</strong> Therefore, a fair price for a <strong>reservation could be $3.00.</strong> That way the business would make an extra $0.75 per reservation. </p>
 
 
 
@@ -351,7 +382,8 @@
 
                 <div class="smspacer"></div>
                 <h4>Sketching</h4>
-                <p>I explored potential ways to design this solution into Lime's current flow.</p>
+                <p>
+                    During sketching, I was able to explore potential layouts and user flows for introducing the reservation option to users. As sketched I determined that there should be two user flows in this feature 1). if a Lime user is already within 0.5 miles from the selected scooter they will automatically have the option to reserve, while in second interaction 2). the user will be notified with a pop-up when they get within the 0.5-mile radius of the scooter.</p>
 
                 <img src="images/lime_reserve/lime_sketches.jpg" class="imagesize">
 
@@ -365,12 +397,13 @@
 
 
                 <div class="smspacer"></div>
-                <h2>Testing with users</h2>
+                <h2>Test & Iterate </h2>
 
 
                 <p>Once I explored different ideas I wanted to test this idea with Lime customers. I did some qualitative testing with a few screens to test some variations. I then mocked up screens in Sketch to built my prototype in XD. I conducted usability tests with 6 Lime customers. </p>
 
-                <img src="images/lime_reserve/lime_v1.png" class="imagesize">
+                <img src="images/lime_reserve/med_fi_lime_reserve.png" class="imagesize">
+
 
 
                 <div class="smspacer"></div>
@@ -384,13 +417,30 @@
                     </ul>
                 </div>
 
+                <div class="smspacer"></div>
+                <h4>Usability Issue 1:</h4>
+
+                <p>
+                    The main usability issue that I found was that the users were concerned that they paid $3 for the reservation but were <strong>not notified that there was a time limit.</strong> To help users be aware of the time limit on the reservation feature, I added a first-time feature interaction. This would allow the user to explore the reservation feature for the first time without committing to payment.</p>
+                <img src="images/lime_reserve/issue_2.png" class="imagesize">
 
 
                 <div class="smspacer"></div>
 
-                <h2>Iterate</h2>
+                <h4>Usability Issue 2:</h4>
                 <p>
-                    To help users be aware of the time limit on the reservation feature, I added a first-time feature interaction. This would allow the user to explore the reservation feature for the first time without committing to it.</p>
+                    Users wanted <strong>access to the “ring” button</strong> on the scooter when they are walking towards their reserved scooter. The ring or bell button makes the scooter the user is searching for ring so you can find it easily. So I incorporated the timer and ring button into the design.</p>
+                <img src="images/lime_reserve/issue_1.png" class="imagesize">
+
+
+                <div class="smspacer"></div>
+
+
+                <h2>Final Solution:</h2>
+
+
+                <p>
+                    This new solution will give Rachel (the persona) a better experience by providing her with a more <strong>dependable way of commuting</strong> around the city. Rachel will <strong>not have to invest time and energy </strong>walking around the streets of Boston trying to find a scooter without the assurance that it will still be there when she arrives.</p>
 
 
                 <div class="smspacer"></div>
@@ -400,32 +450,71 @@
                 </div>
                 <div class="smspacer"></div>
 
-                <p>After the user has interacted with the feature for the first time the app will just give the option to reserve for $3.</p>
 
+                <div class="important">
+                    <h4>Persona in context</h4>
+                    <p>Rachel just received a group text from her friends notifying her that they are meeting up for lunch. She gets on her phone to find a Lime scooter close to her. When she selects a scooter then discovers a new reservation feature on Lime. Rachel decides to reserve the scooter because she only have an hour to get to lunch, eat and be back in the office. As she walks to the scooter, it’s ready for her just a few blocks away and she heads to lunch.  </p>
+                </div>
 
                 <div class="smspacer"></div>
                 <div class="row justify-content-center">
                     <img src="images/lime_reserve/second_time.gif" class="gifsize">
 
                 </div>
-
+                
                 <div class="smspacer"></div>
-                <p>I added a way for users to turn on/off this feature in the settings page.</p>
+                <div class="important">
+                    <h4>Persona in context</h4>
+                    <p>Rachel is now comfortable using this reservations especially  when she is in a time crunch. Overall, she trusts Lime will get her to the places she needs.</p>
+                </div>
+            
+                
+                
+
                 <div class="smspacer"></div>
                 <div class="row justify-content-center">
                     <img src="images/lime_reserve/turn_off.gif" class="gifsize">
 
                 </div>
+                   <div class="smspacer"></div>
+                
+                <div class="important">
+                    <h4>Persona in context</h4>
+                    <p>If at any point Rachel wants to turn off this feature she can go to the setting pages and turn it off.</p>
+                </div>
+                
+
+                <div class="smspacer"></div>
+
+
+
+
+
+
 
                 <div class="smspacer"></div>
                 <h2>My Successes <span class="ec ec-thinking"></span></h2>
 
-                <p>After working on this case study I sent my work over to a senior designer at Lime and this is the reply I received:</p>
+
+                <p>After making some changes to the design based on the previous testing, I presented my prototypes to 3 Lime riders and got the following responses:</p>
+
+
+                <div class="important">
+                    <h4>User Quotes:</h4>
+
+                    <div class="quote">“If Lime had this feature I would feel more comfortable using their services to get from point A to B.”</div>
+
+                    <div class="quote">“This kind of thing would allow me to feel better about my city commute.”</div>
+                </div>
+
+                <div class="smspacer"></div>
+
+                <p>After writing up the case study, I sent my work over to a senior designer at Lime and this is the reply I received:</p>
 
 
                 <div class="smspacer"></div>
-                
-                    <img src="images/lime_reserve/lime_reply.png" class="imagesize">
+
+                <img src="images/lime_reserve/lime_reply.png" class="imagesize">
 
 
                 <div class="smspacer"></div>
@@ -441,8 +530,7 @@
 
                 </div>
 
-
-
+                
 
 
             </div>
@@ -450,8 +538,10 @@
     </div>
     <div class="lgspacer"></div>
 
+    
 
-   
+
+
 
 
 
