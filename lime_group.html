@@ -14,17 +14,20 @@
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,600,700" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
 
 
     <style>
         body {
-            font-family: 'IBM Plex Sans', sans-serif;
+            font-family: 'Roboto', sans-serif;
+            
         }
 
         p {
             font-size: 16px;
             line-height: 2;
+            color: #595959;
 
         }
 
@@ -73,6 +76,25 @@
         .gifsize {
             width: 45%;
             height: 45%;
+        }
+        
+        
+        
+        .quote {
+            font-size: 20px;
+            margin: 2em;
+            font-weight: 400;
+            background: #f9f9f9;
+            border-left: 2px solid black;
+            padding-left: 30px;
+            font-style: italic;
+
+
+        }
+        
+        
+        p i {
+            padding-right: 10px;
         }
 
 
@@ -124,6 +146,12 @@
         .links {
             color: #0278C0;
 
+        }
+        
+        .linkunder {
+            color: #0278C0;
+            text-decoration: underline;
+            
         }
 
 
@@ -192,53 +220,55 @@
 
 <body>
 
-    <div class="topnav">
-        <a class="active" href="index.html"><strong>J/O</strong></a>
-    </div>
+   
 
 
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-7">
+                
+                <div class="smspacer"></div><a href="index.html">
+                <p class="linkunder"> <i class="fa fa-arrow-left links" aria-hidden="true"></i> <span >Back to Home</span></p>
+               </a>
                 <div class="smspacer"></div>
                 <h1>Lime App - Group Rides</h1>
                 <div class="smspacer"></div>
 
                 <figure>
-                    <img src="images/lime_reserve/limeappsmall%20copy.png" class="imagesize">
+                    <img src="images/lime_group/limegrouprides.png" class="imagesize">
                     <figcaption class="figcap"><strong>Disclaimer:</strong> I am not an employee of Lime and this does not represent the official strategic direction of Lime.</figcaption>
                 </figure>
-                <div class="smspacer"></div>
+                <div class="lgspacer"></div>
                 <div class="important">
                     <h4>Project Scope:</h4>
                     <ul>
-                        <li><strong>My Role: </strong> UX Design, Research</li>
+                        <li><strong>My Role: </strong> UX Design, Research, Product Thinking</li>
                         <li><strong>Tools:</strong> Sketch, Adobe XD</li>
-                        <li><strong>Timeline:</strong> Aug 2018 (2 Weeks)</li>
+                        <li><strong>Timeline:</strong> Sep 2018 (2 Weeks)</li>
                         <li><strong>Deliverables:</strong> Sketches, interactive XD prototype, research findings</li>
                         <li><strong>Team:</strong> Just me, myself and I</li>
                     </ul>
                 </div>
 
 
-                <div class="smspacer"></div>
-                <h1>The Problem <span class="ec ec-tired-face"></span></h1>
-                <p>Lime riders traveling in groups have no way to rent multiple scooters on a single phone.
+                <div class="lgspacer"></div>
+                <h1>The Problem </h1>
+                <p>A feature allowing a Lime users to rent multiple scooters on one mobile phone is not currently available. Lime users have complained throughout the reviews in app store about the lack of this kind of feature. 
                 </p>
 
 
 
-                <div class="smspacer"></div>
-                <h1>The Solution <span class="ec ec-grinning"></span></h1>
-                <p>A feature within Lime that allows riders rent multiple scooters on a single phone.
+                <div class="lgspacer"></div>
+                <h1>The Solution </h1>
+                <p>I designed a simple feature within Lime that allows riders rent multiple scooters on a single phone.
                 </p>
 
 
-                <div class="smspacer"></div>
-                <h1>My Approach <span class="ec ec-sunglasses"></span></h1>
+                <div class="lgspacer"></div>
+                <h1>My Approach </h1>
                 <div class="smspacer"></div>
                 <img src="images/lime_reserve/lime_process.png" class="imagesize">
-                <div class="smspacer"></div>
+                <div class="lgspacer"></div>
 
                 <h2>Research</h2>
                 <p>Before diving into any problem I always strive to find out if this problem is worth solving and then understand the problem more deeply.
@@ -247,7 +277,7 @@
 
                 </p>
 
-                <img src="images/lime_reserve/reviews.png" class="imagesize">
+                <img src="images/lime_group/reviews.png" class="imagesize">
 
 
                 <figure>
@@ -257,11 +287,7 @@
                     </a>
                 </figure>
 
-
-
-                <div class="smspacer"></div>
-                <h2>Define</h2>
-              
+                
                 
                 <div class="important">
                     <h4>Research Findings:</h4>
@@ -276,16 +302,48 @@
                 <div class="smspacer"></div>
                 
                 <h4>Discovered Use Cases:</h4>
+                <p>A group of friends or family wants to go ride scooters together...</p>
                     <ul>
                         
                         
-                        <li>A group of friends wants to go ride scooters together, but one friend’s phone is dead</li>
-                        <li>A group of friends wants to go ride scooters together, but the payment info doesn’t work on one of the friend’s phones</li>
-                        <li>A group of friends wants to go ride scooters together, but the data isn’t working on a friends phone so they can’t download the app</li>
+                        <li>but one friend’s phone is dead</li>
+                        <li>but the payment info doesn’t work on one of the friend’s phones</li>
+                        <li>but the data isn’t working on a friends phone so they can’t download the app</li>
+                        <li>but a family member didn't bring their phone</li>
                        
                     </ul>
                 <div class="smspacer"></div>
+                
+                
                 <div class="important">
+                    <h4>User Quotes:</h4>
+
+                    <div class="quote">“There is on way for one user to activiate another's scooter... Why hasn't it been solved? What happens when someone's phone dies?”</div>
+
+                    <div class="quote">“First problem, you can't actually rent two bikes from one account! What kind of business only sells one item per customer?! That is ridiculous.”</div>
+                </div>
+                
+                <div class="smspacer"></div>
+                
+
+
+                <h2>Define</h2>
+              
+                <p>Based on the research and discovered use cases, I developed a persona focus on riding Lime scooters for recreation in groups.
+                </p>
+                
+               
+                
+                
+
+                <div class="smspacer"></div>
+                
+                <img src="images/lime_group/limegroup_persona.png" class="imagesize">
+                <div class="smspacer"></div>
+                
+                
+                
+                 <div class="important">
                     <h4>Why solve this problem?</h4>
                     <p>Solving this problem could help benefit the business and customer:</p>
                     <ul>
@@ -295,74 +353,39 @@
                     </ul>
                 </div>
         
-                
-                
-
-                <div class="smspacer"></div>
-                <p>The persona for this problem is focused on riding Lime scooter for recreation rather than for communting.
-                </p>
-                <img src="images/lime_reserve/lime_persona.png" class="imagesize">
-                <div class="smspacer"></div>
-                <img src="images/lime_reserve/lime_JM.png" class="imagesize">
-                <div class="smspacer"></div>
+                 <div class="smspacer"></div>
 
 
                 <h2>Ideate</h2>
-                <p>After understanding the users & problem deeper, I wrote down as many ideas as possible (even the crazy ones) on a whiteboard to help me think of different ways of solving the problem. Then, I clustered the ideas into similar themes and sections.
+                <p>I started my ideation process by sketching on a whiteboard. After brainstorming, I felt that visibility and user control were important <a href="https://www.usability.gov/how-to-and-tools/methods/heuristic-evaluation.html" target="_blank">heuristic evaluation principles</a> that I needed to focus on while designing. I felt this way because a user renting 2-5 scooters will want to be able to view how many scooters they have rented and have the ability to end scooter rides at any time. I designed components to represent each rented scooter with the QR code provided. 
                 </p>
-
-                ideas image!!!!!!!!
-
-
-                <p><strong>Potential feature solution: </strong>When Lime riders reach a certain distance from the scooter selected, the app will give them an option to reserve the scooter for a certain price.</p>
-
-
-
-
+                
+                <div class="smspacer"></div>
+                
+                <img src="images/lime_group/whiteboarding.png" class="imagesize">
                 <div class="smspacer"></div>
 
-               
-
-                <div class="smspacer"></div>
 
 
                 <h4>Things I considered:</h4>
 
 
                 <ul>
-                    <li>What is a fair price?</li>
-                    <li>How close is a fair distance for reserving a scooter?</li>
-                    <li>Will the reservation price still help the business make money?</li>
-                    <li>Are riders willing to pay the extra fee to reserve the scooter?</li>
+                    
+                    <li>How should users be notified about this new feature?</li>
+                    <li>How many scooters should a user be able to rent?</li>
+                    <li>Who is responsible if the scooter is damage? Renter or rider?</li>
                 </ul>
-
+                
+                <p>After brainstorming on the whiteboard I was able to visualize a flow for a Lime rider adding multiple scooters then removing them after their group ride. Then I went into Sketch to build out each screen.</p>
                 <div class="smspacer"></div>
-                <h4>Reservations - Pricing breakdown</h4>
-                <p>Currently, Lime scooters cost $1.00 to unlock and $0.15 a minute to continue riding. If the rider can reserve the scooter from 0.5 miles away then the price of the reservation depends on how long it takes for the rider to get to the scooter. If the average rider takes 15 mins to walk 0.5 to the scooter than that would cost 15 mins * $0.15 = $2.25. Therefore, a fair price for a reservation could be $3.00. That way the business would make an extra $0.75 per reservation. </p>
+               
 
 
 
 
 
 
-
-
-                <div class="smspacer"></div>
-                <h4>Sketching</h4>
-                <p>I explored potential ways to design this solution into Lime's current flow.</p>
-
-                <img src="images/lime_reserve/lime_sketches.jpg" class="imagesize">
-
-                <div class="smspacer"></div>
-
-
-
-
-
-
-
-
-                <div class="smspacer"></div>
                 <h2>Testing with users</h2>
 
 
