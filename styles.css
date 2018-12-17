@@ -1,0 +1,198 @@
+ <style>
+
+
+        body {
+            font-family: 'IBM Plex Sans', sans-serif;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 2;
+
+        }
+
+        h1 {
+            font-size: 30px;
+            font-weight: bold;
+
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 16px;
+
+
+        }
+
+
+        h4 {
+
+            font-size: 12px;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #676767;
+        }
+
+
+        strong {
+            font-weight: bold;
+        }
+
+        .row {
+            text-align: left;
+
+        }
+
+        .imagesize {
+            width: 100%;
+            height: auto;
+        }
+
+        .gifsize {
+            width: 45%;
+            height: 45%;
+        }
+
+
+
+
+
+        .content {
+            width: 45%;
+            margin: 0 auto;
+            margin-top: 10em;
+            margin-bottom: 10em;
+
+        }
+
+        .quote {
+            font-size: 20px;
+            margin: 2em;
+            font-weight: 400;
+            background: #f9f9f9;
+            border-left: 2px solid black;
+            padding-left: 30px;
+            font-style: italic;
+
+
+        }
+
+
+
+        .lgspacer {
+            padding-top: 5em;
+
+        }
+
+        .smspacer {
+            padding-top: 2em;
+
+        }
+
+        .important {
+            background-color: #F7F7F7;
+            padding: 30px;
+        }
+
+
+
+        .importantclick {
+            background-color: #F7F7F7;
+            padding: 30px;
+            text-align: center;
+            transition: background-color .5s;
+
+        }
+
+        .importantclick:hover {
+            background-color: #DDDDDD;
+            cursor: pointer;
+
+        }
+
+
+        .links {
+            color: #0278C0;
+
+        }
+
+        p i {
+            padding-right: 10px;
+            color: #4d4d4d;
+        }
+
+
+        .darklink {
+            color: #4d4d4d;
+        }
+
+
+        .figcap {
+            padding-top: 10px;
+            font-size: 12px;
+            font-weight: 400;
+            text-align: center;
+            color: dimgrey;
+
+        }
+
+        .topnav {
+            overflow: hidden;
+
+        }
+
+        .topnav a {
+            float: left;
+            color: black;
+            text-align: center;
+            padding-left: 2em;
+            padding-top: 1em;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+
+        ul li {
+            line-height: 35px;
+        }
+
+
+        @media screen and (min-width: 300px) {
+            .content {
+                width: 90%;
+                margin: 0 auto;
+                margin-top: 5em;
+                margin-bottom: 10em;
+            }
+
+            .imagesize {
+                width: 100%;
+                height: auto;
+            }
+
+
+        }
+
+        @media screen and (min-width: 600px) {
+            .content {
+                width: 60%;
+                margin: 0 auto;
+                margin-top: 5em;
+                margin-bottom: 10em;
+            }
+        }
+
+        @media screen and (min-width: 1000px) {
+            .content {
+                width: 45%;
+                margin: 0 auto;
+                margin-top: 5em;
+                margin-bottom: 10em;
+            }
+        }
+    </style>

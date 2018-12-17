@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Theme Made By www.w3schools.com - No Copyright -->
+    <title>Jake Ottesen | UX Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://unpkg.com/emoji.css/dist/emoji.min.css'>
+    <link rel="stylesheet" href="https://use.typekit.net/auy7uxg.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+
+    <style>
+        body {
+            font-family: 'IBM Plex Sans', sans-serif;
+
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 2;
+            color: black;
+
+        }
+
+        h1 {
+            font-size: 30px;
+            font-weight: bold;
+
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 16px;
+
+
+        }
+
+
+        h4 {
+
+            font-size: 12px;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #676767;
+        }
+
+
+        strong {
+            font-weight: bold;
+        }
+
+        .row {
+            text-align: left;
+
+        }
+
+        .imagesize {
+            width: 100%;
+            height: auto;
+        }
+
+        .gifsize {
+            width: 45%;
+            height: 45%;
+        }
+
+
+
+        .quote {
+            font-size: 20px;
+            margin: 2em;
+            font-weight: 400;
+            background: #f9f9f9;
+            border-left: 2px solid black;
+            padding-left: 30px;
+            font-style: italic;
+
+
+        }
+
+
+        p i {
+            padding-right: 10px;
+        }
+
+
+
+
+
+        .content {
+            width: 45%;
+            margin: 0 auto;
+            margin-top: 10em;
+            margin-bottom: 10em;
+
+        }
+
+
+
+        .lgspacer {
+            padding-top: 5em;
+
+        }
+
+        .smspacer {
+            padding-top: 2em;
+
+        }
+
+        .important {
+            background-color: #F7F7F7;
+            padding: 30px;
+        }
+
+
+
+        .importantclick {
+            background-color: #F7F7F7;
+            padding: 30px;
+            text-align: center;
+            transition: background-color .5s;
+
+        }
+
+        .importantclick:hover {
+            background-color: #DDDDDD;
+            cursor: pointer;
+
+        }
+
+
+
+        .importantclick1 {
+            background-color: #DDDDDD;
+            padding: 30px;
+            text-align: center;
+            transition: background-color .5s;
+
+        }
+
+        .importantclick1:hover {
+            background-color: #F7F7F7;
+            cursor: pointer;
+
+        }
+
+
+
+
+        .links {
+            color: #0278C0;
+
+        }
+
+        .linkunder {
+            color: #0278C0;
+            text-decoration: underline;
+
+        }
+
+
+        .figcap {
+            padding-top: 10px;
+            font-size: 12px;
+            font-weight: 400;
+            text-align: center;
+            color: dimgrey;
+
+        }
+
+        .topnav {
+            overflow: hidden;
+
+        }
+
+        .topnav a {
+            float: left;
+            color: black;
+            text-align: center;
+            padding-left: 2em;
+            padding-top: 1em;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+
+        ul li {
+            line-height: 35px;
+        }
+
+
+
+
+
+
+        /*-------- FOOTER ICON BAR --------*/
+
+        .icon {
+            font-size: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+
+
+        .iconbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+
+        }
+
+        .iconbar i {
+            color: black;
+            transition: color .5s;
+        }
+
+        .iconbar i:hover {
+            color: darkgrey;
+        }
+
+
+        .container {
+            text-align: center!important;
+        }
+
+
+
+
+        @media screen and (min-width: 300px) {
+            .content {
+                width: 90%;
+                margin: 0 auto;
+                margin-top: 5em;
+                margin-bottom: 10em;
+            }
+
+        }
+
+        @media screen and (min-width: 600px) {
+            .content {
+                width: 60%;
+                margin: 0 auto;
+                margin-top: 5em;
+                margin-bottom: 10em;
+            }
+        }
+
+        @media screen and (min-width: 1000px) {
+            .content {
+                width: 45%;
+                margin: 0 auto;
+                margin-top: 5em;
+                margin-bottom: 10em;
+            }
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+
+
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="smspacer"></div>
+
+                <a href="index.html">
+                    <p class="darklink"> <i class="fa fa-arrow-left darklink" aria-hidden="true"></i> <span>Back to Home</span></p>
+                </a>
+                <div class="smspacer"></div>
+                <h1>Grad Planner Redesign</h1>
+                <div class="smspacer"></div>
+
+                <figure>
+                    <img src="homepage/grad_planner.png" class="imagesize">
+                    <figcaption class="figcap"><strong>Disclaimer:</strong> Visuals have been changed due to NDA. The redesign will be released in April of 2019.</figcaption>
+                </figure>
+                <div class="lgspacer"></div>
+                <div class="important">
+                    <h4>Project Scope:</h4>
+                    <ul>
+                        <li><strong>My Role: </strong> UX Design, Research</li>
+                        <li><strong>Tools:</strong> Adobe XD, Paper & Pen</li>
+                        <li><strong>Timeline:</strong> Sep - Dec 2018</li>
+                        <li><strong>Deliverables:</strong> Sketches, interactive XD prototype, research findings</li>
+                        <li><strong>Team:</strong> Me, Vlad Balashoff, Nathan Jones</li>
+                    </ul>
+                </div>
+
+
+                <div class="lgspacer"></div>
+
+                <h1>Introduction:</h1>
+
+                <p>Grad Planner is a web application used as a platform for students to plan out their required courses for graduation. The tool also connects students to academic advisors from the school. <br><br> Students use Grad Planner to <strong>view required courses, plan courses by semester, declare their major, change their major, and monitor graduation progress.</strong>
+
+
+                </p>
+
+                <div class="lgspacer"></div>
+
+                <h1>The Problem:</h1>
+
+                <p>Students are required to perform essential tasks for graduation on the Grad Planner platform, yet the <strong>current interface is painful to use.</strong> The web app leaves students <strong>feeling confused and frustrated. </strong> As a result, the academic advising office is overloaded with student appointments and questions because they are unable to effectively use the tool.
+
+
+                </p>
+
+                <div class="lgspacer"></div>
+
+                <h2>Current UI of Grad Planner</h2>
+                <div class="smspacer"></div>
+                <figure>
+                    <a data-fancybox="gallery" href="images/gradplanner/current_ui.png"><img src="images/gradplanner/current_ui.png" class="imagesize"></a>
+                    <figcaption class="figcap">Lack of pertinent information regarding assignment submission.</figcaption>
+                </figure>
+
+
+                <div class="lgspacer"></div>
+
+                <h1>Initial Research</h1>
+
+                <div class="smspacer"></div>
+                <h2>User Interviews</h2>
+                <p>I interviewed 18 students to explore who our users were, how they were using Grad Planner, and how their experience had been overall. During the interviews, I asked questions like “Tell me about the last time you used Grad Planner?”,“Why did you last use it?”,“How does Grad Planner help you as a student?" Here are some <strong>key insights</strong> I gained:</p>
+
+
+                <div class="smspacer"></div>
+
+                <h4>Lack of Feature Awareness</h4>
+                <p> Majority of users were unaware of the features on Grad Planner such as changing a major, creating an alternate plan, and comparing plans.</p>
+
+                <div class="smspacer"></div>
+
+                <h4>Aesthetics and Feel</h4>
+                <p>Almost all the students mentioned that Grad Planner’s UI was outdated, interactions felt awkward and had a slow loading time.</p>
+                <div class="smspacer"></div>
+
+                <h4>Overwhelming Interface</h4>
+                <p>Many students, but particularly freshman, noted feeling overwhelmed by the amount of information presented in the dashboard. </p>
+
+
+
+
+                <div class="lgspacer"></div>
+
+
+                <h2>Usability Testing</h2>
+                <p>As a team, we conducted usability tests with 10 participants. This testing allowed us to dig deeper and discover more issues with the interface. Here are a few <strong>key pain points:</strong></p>
+
+                <div class="smspacer"></div>
+
+
+
+
+                <h4>Pain Point #1</h4>
+                <p>Students struggled to complete the task of changing their major due to the selection of "create an alternate plan" being <strong>hidden in a dropdown menu.</strong> </p>
+
+                <figure>
+                    <a data-fancybox="gallery" href="images/gradplanner/change_major.gif"><img src="images/gradplanner/change_major.gif" class="imagesize"></a>
+                    <figcaption class="figcap"><strong>Current flow</strong> of changing a major/creating an alternate plan.</figcaption>
+                </figure>
+
+
+
+                <div class="lgspacer"></div>
+
+
+                <h4>Pain Point #2</h4>
+                <p>Dashboard contains <strong>confusing and irrelevant information</strong> for students:
+                </p>
+
+                <figure>
+                    <a data-fancybox="gallery" href="images/gradplanner/dashboard_ui.png"><img src="images/gradplanner/dashboard_ui.png" class="imagesize"></a>
+                    <figcaption class="figcap"><strong>Current UI</strong> of the Grad Planner dashboard</figcaption>
+                </figure>
+
+
+
+
+                <div class="lgspacer"></div>
+
+
+                <h4>Pain Point #3</h4>
+                <p> Students have <strong>no way to find required courses</strong> for their degree without first opening an accordion, followed by selecting a course placeholder, which finally displays required courses:
+                </p>
+
+                <figure>
+                    <a data-fancybox="gallery" href="images/gradplanner/adding-courses.gif"><img src="images/gradplanner/adding-courses.gif" class="imagesize"></a>
+                    <figcaption class="figcap"><strong>Current flow</strong> of adding a course.</figcaption>
+                </figure>
+
+
+
+
+                <div class="lgspacer"></div>
+
+
+
+                <h1>Ideate</h1>
+                <div class="smspacer"></div>
+
+                <p>After gaining a solid understanding of the pain points in Grad Planner, we set up to redesign the whole interface with a focus on aiding student success. Although, we found many pain points, in this case study I will only address the changing a major/creating an alternate plan to help demonstrate my design process. </p>
+
+                <p><strong>What is an alternate plan?</strong> <br>An alternate plan is a “sandbox” plan that allows a student to explore the scenario of another major without changing their current plan.</p>
+
+                <div class="lgspacer"></div>
+
+
+                <div class="important">
+                    <h4>HMW Question:</h4>
+                    <h2>How might we streamline crucial information and features that aid student success?</h2>
+
+                </div>
+
+                <div class="lgspacer"></div>
+                <h2>Design Goals</h2>
+                <div class="smspacer"></div>
+
+
+                <div class="row">
+                    <div class="col-md-4">
+
+                        <h4>Update</h4>
+
+                        <p>Bring site aesthetics up to speed with current visual trends and patterns.</p>
+
+                    </div>
+
+                    <div class="col-md-4">
+                        <h4>Feature Awareness</h4>
+
+                        <p>Bring awareness of important features to students.</p>
+
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <h4>Relevant Information</h4>
+
+                        <p>Provide students with necessary information about their planned graduation.</p>
+
+                    </div>
+
+
+                </div>
+
+                
+                
+
+
+
+
+
+                <div class="lgspacer"></div>
+
+                <h1><span class="ec ec-construction"></span> Case Study In-Progress</h1>
+
+
+
+
+
+
+
+
+
+
+                <div class="lgspacer"></div>
+                <div class="important">
+                    <h4>Current Lessons Learned:</h4>
+                    <ul>
+                        <li><strong>Don't design alone. Design in the open.</strong> We, as a team, didn't work close enough with the developers so when it came to passing off our design work, there were many changes that needed to be made.</li>
+                        <li><strong>Conduct an analysis as team.</strong> Coming together as team after conducting research helped us to form a consensus as to what our next steps should be.</li>
+
+
+
+                    </ul>
+
+                </div>
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+    <div class="lgspacer"></div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+
+
+
+
+
+
+
+    </body>
+
+
+<footer>
+    <div class="lgspacer"></div>
+
+    <div class="container">
+        <div class="iconbar">
+
+            <ul>
+
+
+
+                <a href="https://medium.com/@ottesenjacob1994" target="_blank"><i class="fab fa-medium icon"></i></a>
+                <a href="https://www.behance.net/ott1200693db" target="_blank"><i class="fab fa-behance icon"></i></a>
+                <a href="https://www.linkedin.com/in/jacobottesen/" target="_blank"><i class="fab fa-linkedin-in icon"></i></a>
+                <a href="https://dribbble.com/jakeottesen" target="_blank"><i class="fab fa-dribbble icon"></i></a>
+                <a href="mailto:ottesenjacob1994@gmail.com" target="_top"><i class="fas fa-envelope icon"></i></a>
+
+
+
+
+
+            </ul>
+
+
+            <div class="smspacer"></div>
+
+
+        </div>
+        <p class="figcap">&#169; 2017 - 2018. Design and develop by Jacob Ottesen</p>
+
+    </div>
+    <div class="smspacer"></div>
+
+
+
+
+</footer>
+
+</html>
