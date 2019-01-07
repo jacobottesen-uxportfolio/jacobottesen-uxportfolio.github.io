@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Theme Made By www.w3schools.com - No Copyright -->
+    <title>Jake Ottesen | UX Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://unpkg.com/emoji.css/dist/emoji.min.css'>
+    <link rel="stylesheet" href="https://use.typekit.net/auy7uxg.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+
+
+    <style>
+        body {
+            font-family: 'IBM Plex Sans', sans-serif;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 2;
+
+        }
+
+        h1 {
+            font-size: 40px;
+            font-weight: bold;
+
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 16px;
+
+
+        }
+
+
+        h4 {
+
+            font-size: 12px;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #676767;
+        }
+
+        .huge {
+            font-size: 55px;
+            color: black;
+        }
+
+
+
+
+        strong {
+            font-weight: bold;
+        }
+
+        .row {
+            text-align: left;
+
+        }
+
+        .imagesize {
+            width: 100%;
+            height: auto;
+        }
+
+        .gifsize {
+            width: 60%;
+            height: 60%;
+        }
+
+
+        . .content {
+            width: 45%;
+            margin: 0 auto;
+            margin-top: 10em;
+            margin-bottom: 10em;
+
+        }
+
+        .quote {
+            font-size: 20px;
+            margin: 2em;
+            font-weight: 400;
+            background: #f9f9f9;
+            border-left: 2px solid black;
+            padding-left: 30px;
+            font-style: italic;
+
+
+        }
+
+        .linethrough {
+            text-decoration: line-through;
+        }
+
+
+
+
+        .lgspacer {
+            padding-top: 5em;
+
+        }
+
+        .smspacer {
+            padding-top: 2em;
+
+        }
+
+        .important {
+            background-color: #F7F7F7;
+            padding: 30px;
+        }
+
+
+
+        .importantclick {
+            background-color: #F7F7F7;
+            padding: 30px;
+            text-align: center;
+            transition: background-color .5s;
+
+        }
+
+        .importantclick:hover {
+            background-color: #DDDDDD;
+            cursor: pointer;
+
+        }
+
+
+        .links {
+            color: #0278C0;
+
+        }
+
+        p i {
+            padding-right: 10px;
+            color: #4d4d4d;
+        }
+
+
+        .darklink {
+            color: #4d4d4d;
+        }
+
+
+        .figcap {
+            padding-top: 10px;
+            font-size: 12px;
+            font-weight: 400;
+            text-align: center;
+            color: dimgrey;
+
+        }
+
+        .topnav {
+            overflow: hidden;
+
+        }
+
+        .topnav a {
+            float: left;
+            color: black;
+            text-align: center;
+            padding-left: 2em;
+            padding-top: 1em;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+
+        ul li {
+            line-height: 35px;
+        }
+
+
+        /*-------- NEXT BUTTOM --------*/
+
+        a {
+            text-decoration: none!important;
+            color: black;
+        }
+
+
+
+        a:hover {
+            text-decoration: none!important;
+            color: black;
+        }
+
+
+
+
+        /*-------- FOOTER ICON BAR --------*/
+
+        .icon {
+            font-size: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+
+
+        .iconbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+
+        }
+
+        .iconbar i {
+            color: black;
+            transition: color .5s;
+        }
+
+        .iconbar i:hover {
+            color: darkgrey;
+        }
+
+
+        .container {
+            text-align: center!important;
+        }
+
+
+
+
+        @media screen and (min-width: 300px) {
+            .content {
+                width: 90%;
+                margin: 0 auto;
+                margin-top: 5em;
+                margin-bottom: 10em;
+            }
+
+            .imagesize {
+                width: 100%;
+                height: auto;
+            }
+
+
+        }
+
+        @media screen and (min-width: 600px) {
+            .content {
+                width: 60%;
+                margin: 0 auto;
+                margin-top: 5em;
+                margin-bottom: 10em;
+            }
+        }
+
+        @media screen and (min-width: 1000px) {
+            .content {
+                width: 45%;
+                margin: 0 auto;
+                margin-top: 5em;
+                margin-bottom: 10em;
+            }
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+
+
+
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <span class="col-md-9">
+
+                <div class="smspacer"></div>
+
+                <a href="index.html">
+                    <p class="darklink"> <i class="fa fa-arrow-left darklink" aria-hidden="true"></i> <span>Back to Projects</span></p>
+            </a>
+
+            <div class="smspacer"></div>
+            <h1 class="huge">MyBYUI Portal Redesign</h1>
+            <div class="smspacer"></div>
+            </span>
+
+
+        </div>
+    </div>
+
+
+    <span class="col-md-12"> 
+            <figure>
+                <img src="images/mybyui/mybyui-hero.png" class="imagesize">
+                <figcaption class="figcap"><strong>Disclaimer:</strong> This is a project I worked on as a UX designer at BYU-Idaho. The project is still in progress.</figcaption>
+            </figure>
+                    
+              </span>
+
+
+
+    <div class="container">
+        <div class="row justify-content-center">
+
+            <span class="col-md-9">    
+            <div class="smspacer"></div>
+            <div class="important">
+                <h4>Project Scope:</h4>
+                <ul>
+                    <li><strong>My Role: </strong> UX Design, Research</li>
+                    <li><strong>Tools:</strong> Sketch, Adobe XD</li>
+                    <li><strong>Timeline:</strong> Dec 2018 (1 week)</li>
+                    <li><strong>Deliverables:</strong> Sketches, mockups, research findings, restructured IA</li>
+                    <li><strong>Team:</strong> Just me, myself and I</li>
+                </ul>
+            </div>
+            <div class="lgspacer"></div>
+
+
+
+                    <h1 >Introduction</h1>
+                    <p>MyBYUI is the homepage portal for BYU-Idaho students. The student portal's purpose is to present the most relevant information to students allowing them to navigate the university site and find the resources they need. </p>
+                
+                <div class="lgspacer"></div>
+
+                  <h1>The Problem</h1>
+                    <p>The MyBYUI portal <strong>lacks relevant information and resources</strong> for students. As a result, students have <strong>difficulty navigating</strong> throughout the site, accessing services, completing necessary tasks. </p>
+                
+                
+                
+                
+                 <div class="smspacer"></div>
+                <div class="row">
+                    
+                    <span class="col-md-6"> 
+                    <h4>Before </h4>
+                        <a data-fancybox="gallery" href="images/mybyui/old-design.png"><img src="images/mybyui/old-design.png" class="imagesize"></a>
+            <div class="lgspacer"></div>
+                    
+                    
+                    </span>
+
+            <span class="col-md-6"> 
+                    <h4>After</h4>
+                        
+                        <a data-fancybox="gallery" href="images/mybyui/new-design.png"><img src="images/mybyui/new-design.png" class="imagesize"></a>
+            <div class="lgspacer"></div>
+                    
+                    
+                    </span>
+
+                    
+                    
+                    
+                    
+
+
+
+
+        </div>
+
+
+        <div class="smspacer"></div>
+        <h1>My Process </h1>
+
+
+        <a data-fancybox="gallery" href="images/mybyui/process.png"><img src="images/mybyui/process.png" class="imagesize"></a>
+        <div class="lgspacer"></div>
+
+
+
+
+        <h1 >Research</h1>
+
+        <div class="smspacer"></div>
+        <h2>Defining Assumptions & Research Goals</h2>
+        <p>As a student that constantly uses this portal, I had many assumptions and ideas behind what the new redesign could look like. It was tempting to start jumping into ideas of what this portal could look like, but I wanted to test my assumptions. Our team needed to establish goals. Before interviewing students, we wrote down research goals and questions we wanted to be answered. This allowed us to form a consensus around what we wanted to learn.
+        </p>
+        <div class="smspacer"></div>
+        <div class="row">
+
+            <span class="col-md-6"> 
+      
+        <h4>Personal Assumptions:</h4>
+        <ul>
+            <li>Students use Email and iLearn most</li>
+            <li>Information below the menu is unused</li>
+            <li>The 'More" dropdown tab hides important options for students</li>
+            
+
+        </ul> 
+     
+     
+     
+    </span>
+
+            <span class="col-md-6"> 
+              
+         
+     
+        <h4>Research Goals:</h4>
+        <ul>
+            <li>Discover needs & wants of students</li>
+            <li>Find out what students are using and not using on the portal</li>
+            <li>Define important tasks</li>
+
+        </ul>
+        
+    </span>
+
+        </div>
+
+
+        <div class="smspacer"></div>
+        <a data-fancybox="gallery" href="images/mybyui/research-goals.JPG"><img src="images/mybyui/research-goals.JPG" class="imagesize"></a>
+        <div class="lgspacer"></div>
+
+
+
+        <h2>Talking with the Analytics team</h2>
+        <p>To test some of the assumptions we had as a team, we wanted some strong data around what students are using on the current portal. We met with the analytics team hoping to get some data around what students use most on the portal page. <br><br>Turns out the analytics team had not been tracking the portal page. As a result, we decided to print out the portal page and asked students about the last two times they used the page (during the user interviews). We had each student point out what they clicked on and why. </p>
+
+
+
+        <div class="lgspacer"></div>
+
+        <h2>User Interviews</h2>
+
+        <p>To understand how students use the current MyBYUI portal, the UX researcher and I conducted guerilla <strong>user interviews with 22</strong> students. During the interviews, I asked questions like "Tell me about your experience using the MyBYUI portal", "What are important tasks you perform on MyBYUI?", "If MyBYUI could streamline any information to you, what would that information be?", and "What are needs you have as a student that MyBYUI is not fulfilling?" <br><br>Here are some <strong>key insights</strong> we found:</p>
+
+        <ul>
+            <li>Most used tabs are iLearn & Email</li>
+            <li>Students disregard links below the tabs</li>
+            <li>Lack of actionable alerts</li>
+            <li>Menu labeling don't align with students mental mind</li>
+
+        </ul>
+
+
+
+
+
+
+        <div class="smspacer"></div>
+
+        <div class="important">
+            <h4>User Quotes from Interviews:</h4>
+
+            <div class="quote">“I feel like this portal is more of a maze than a doorway to get to where I need.”</div>
+
+            <div class="quote">“This page is not clearly laid out so I just bookmark the important links I need in my browser.”</div>
+        </div>
+
+        <div class="lgspacer"></div>
+
+
+
+
+        <h1 >Define</h1>
+
+        <div class="smspacer"></div>
+
+        <h2>What does success look like?</h2>
+
+
+        <p>In past projects our team didn't do a job defining what success looks like. During the time of this project I had been working with a design mentor that encouraged me to start thinking about defining success/impact when working on a project. I used IDEO's "The Field Guide To Human-Centered Design," to define success as a team. I posed a few questions to the team like "Does our challenge drive towards impact?", "What does success look like in terms of how were affecting students?" and "What is long term vs short term success?"</p>
+        <div class="smspacer"></div>
+
+        <div class="important">
+
+            <h4>Defining Success for Students:</h4>
+            <ul>
+                <li>Save students time</li>
+                <li>Increase student awareness of educational progress</li>
+                <li>Provide valuable/useful information to students</li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="lgspacer"></div>
+
+        <h2>Persona Development</h2>
+
+
+        <p>After collecting insights from the user interviews, our team created two personas. The first persona is focused on a upper-class student who needs to save time and be aware of important deadlines. The second persona is focused on a freshman student who is looking for rescources that the campus provides. </p>
+
+        <div class="smspacer"></div>
+
+
+        <div class="row">
+
+            <span class="col-md-6">
+                 <a data-fancybox="gallery" href="images/mybyui/persona-junior.png"><img src="images/mybyui/persona-junior.png" class="imagesize"></a>
+            </span>
+
+
+
+
+            <span class="col-md-6">
+                 <a data-fancybox="gallery" href="images/mybyui/persona-freshman.png"><img src="images/mybyui/persona-freshman.png" class="imagesize"></a>
+            </span>
+
+
+
+            <div class="lgspacer"></div>
+
+
+        </div>
+
+
+
+        <div class="lgspacer"></div>
+
+        <h2>Pain Points</h2>
+        <p>During the user interviews, a few of the students showed us direct pain points they were facing with the current UI layout. Each pain point is labeled in red:</p>
+
+        <div class="smspacer"></div>
+
+        <a data-fancybox="gallery" href="images/mybyui/old-design-painpoints.png"><img src="images/mybyui/old-design-painpoints.png" class="imagesize"></a>
+        <div class="lgspacer"></div>
+
+
+
+
+        <h1>Ideate</h1>
+        <div class="smspacer"></div>
+        <h2>Concept & Design</h2>
+
+        <p>Then we started by roughly drawing out some concepts for the portal page. During this time, we kept in mind the following:</p>
+
+
+        <ul>
+            <li>Students & their goals</li>
+            <li>Needs of students</li>
+            <li>Success/impact goals</li>
+
+
+        </ul>
+
+        <p>We explored different ways of laying out components and came up with 3 design variations. </p>
+ <div class="smspacer"></div>
+
+        <a data-fancybox="gallery" href="images/mybyui/whiteboarding.jpg"><img src="images/mybyui/whiteboarding.jpg" class="imagesize"></a>
+        <div class="lgspacer"></div>
+                
+        <h2>Wireframe</h2>        
+
+        <p>After exploring ideas, we created a higher-fidelity of the wireframes with further detail. To gather early feedback we printed out the wireframe and showed it 6 students on campus. As the students gave us feedback on the new design, we took notes on print out. </p>
+
+                
+                <div class="lgspacer"></div>
+                <div class="row">
+                
+                    <span class="col-md-6">
+                        <a data-fancybox="gallery" href="images/mybyui/wireframes-annototed.png"><img src="images/mybyui/wireframes-annototed.png" class="imagesize"></a>
+                    </span>
+                    
+                    
+                    
+                    <span class="col-md-6">
+                          <a data-fancybox="gallery" href="images/mybyui/wireframe1.JPG"><img src="images/mybyui/wireframe1.JPG" class="imagesize"></a>
+                    </span>
+                
+               
+                
+                </div>
+                
+                
+                
+           
+        
+         
+                
+                
+
+        <div class="smspacer"></div>
+      
+        <div class="lgspacer"></div>
+                
+                
+                  <h2>Reconstructing the IA</h2>        
+
+        <p>During the interviews with students, we realized that the current menu had an overload of tabs and many tabs had confusion labeling. To get a better look at the current IA structure, we charted each tab and sub tab on a whiteboard. </p>
+  
+                
+      <div class="smspacer"></div>
+        <h4>Current IA Structure</h4>
+        <a data-fancybox="gallery" href="images/mybyui/ia-v1.png"><img src="images/mybyui/ia-v1.png" class="imagesize"></a>
+        <div class="lgspacer"></div>
+                  
+
+        <h4>Open Card Sort</h4>
+
+        <p>To better understand the mental model of students, we decided to conduct an <strong>open card sort with 8 students</strong>. We took all the sub tabs and wrote them down on paper cards. To start the card sort, I had students group the sub tabs into as many groups as they wanted. After that, I asked them how they would group the tabs in only three groups. During this part of the card sort I asked questions like "How do these words go together?" or "Why would this word not be matched with these?" </p>
+                 <div class="smspacer"></div>
+        <a data-fancybox="gallery" href="images/mybyui/card-sorting.JPG"><img src="images/mybyui/card-sorting.JPG" class="imagesize"></a>
+        <div class="lgspacer"></div>
+                <h4>Closed Card Sort</h4>
+                
+                <p>The open card help generates ideas for the menu tabs. The three most common words were: Academics, Finances, Resources. We took these category tab words and added them to the cards so that we could conduct a closed card sort. <strong>Our team conducted 4 closed card sorts with students. </strong>During this round of card sorts, I asked students "What's missing that you need as a student?", "If this were the new menu, what else would you be looking for?" Overall, this last card sort helped us solidify structure of the new menu tabs. </p>
+
+
+                  <div class="smspacer"></div>
+        <h4>Current IA Structure - <strong>Annatoted</strong> </h4>
+        <a data-fancybox="gallery" href="images/mybyui/ia-annatoted.png"><img src="images/mybyui/ia-annatoted.png" class="imagesize"></a>
+        <div class="lgspacer"></div>
+
+
+        <h4><strong>New Refined</strong> - Site Structure</h4>
+        <a data-fancybox="gallery" href="images/mybyui/ia-v2.png"><img src="images/mybyui/ia-v2.png" class="imagesize"></a>
+        <div class="lgspacer"></div>
+
+
+                
+             
+
+                
+
+
+
+        </span>
+    </div>
+    </div>
+    <div class="lgspacer"></div>
+
+    <a href="gradplanner.html">
+        <div class="row">
+
+            <div class="importantclick col-md-12">
+                <p>Next Case Study</p>
+                <h1>Grad Planner Redesign</h1>
+            </div>
+
+
+        </div>
+
+    </a>
+
+
+
+
+
+
+    <div class="lgspacer"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+
+
+
+
+
+
+</body>
+
+
+
+
+<footer>
+
+
+    <div class="container">
+        <div class="iconbar">
+
+            <ul>
+
+
+
+                <a href="https://medium.com/@ottesenjacob1994" target="_blank"><i class="fab fa-medium icon"></i></a>
+                <a href="https://www.behance.net/ott1200693db" target="_blank"><i class="fab fa-behance icon"></i></a>
+                <a href="https://www.linkedin.com/in/jacobottesen/" target="_blank"><i class="fab fa-linkedin-in icon"></i></a>
+                <a href="https://dribbble.com/jakeottesen" target="_blank"><i class="fab fa-dribbble icon"></i></a>
+                <a href="mailto:ottesenjacob1994@gmail.com" target="_top"><i class="fas fa-envelope icon"></i></a>
+
+
+
+
+
+            </ul>
+
+
+            <div class="smspacer"></div>
+
+
+        </div>
+        <p class="figcap">&#169; 2017 - 2018. Design and develop by Jacob Ottesen</p>
+
+    </div>
+    <div class="smspacer"></div>
+
+
+
+
+</footer>
+
+</html>

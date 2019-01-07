@@ -30,7 +30,7 @@
         }
 
         h1 {
-            font-size: 30px;
+            font-size: 40px;
             font-weight: bold;
 
         }
@@ -56,6 +56,13 @@
             color: #676767;
         }
 
+        .huge {
+            font-size: 55px;
+            color: black;
+        }
+
+
+
 
         strong {
             font-weight: bold;
@@ -72,16 +79,12 @@
         }
 
         .gifsize {
-            width: 45%;
-            height: 45%;
+            width: 60%;
+            height: 60%;
         }
 
 
-        .
-
-
-
-        .content {
+        . .content {
             width: 45%;
             margin: 0 auto;
             margin-top: 10em;
@@ -100,11 +103,11 @@
 
 
         }
-        
-        
-        
-        
-        
+
+
+
+
+
 
 
 
@@ -186,22 +189,20 @@
         }
 
 
-          /*-------- NEXT BUTTOM --------*/
-        
-        
-        
+        /*-------- NEXT BUTTOM --------*/
+
         a {
             text-decoration: none!important;
             color: black;
         }
-        
-        
-        
-         a:hover {
+
+
+
+        a:hover {
             text-decoration: none!important;
             color: black;
         }
-        
+
 
 
 
@@ -287,23 +288,39 @@
 
     <div class="container">
         <div class="row justify-content-center">
-            <span class="col-md-8">
+            <span class="col-md-9">
 
                 <div class="smspacer"></div>
 
                 <a href="index.html">
-                    <p class="darklink"> <i class="fa fa-arrow-left darklink" aria-hidden="true"></i> <span>Back to Home</span></p>
+                    <p class="darklink"> <i class="fa fa-arrow-left darklink" aria-hidden="true"></i> <span>Back to Projects</span></p>
             </a>
 
             <div class="smspacer"></div>
-            <h1>Lime App - Reservations</h1>
+            <h1 class="huge">Lime App Reservations</h1>
             <div class="smspacer"></div>
+            </span>
 
+
+        </div>
+    </div>
+
+
+    <span class="col-md-12"> 
             <figure>
-                <img src="images/lime_reserve/limeappsmall%20copy.png" class="imagesize">
+                <img src="images/lime_reserve/lime-reserve-hero.png" class="imagesize">
                 <figcaption class="figcap"><strong>Disclaimer:</strong> I am not an employee of Lime and this does not represent the official strategic direction of Lime.</figcaption>
             </figure>
-            <div class="lgspacer"></div>
+                    
+              </span>
+
+
+
+    <div class="container">
+        <div class="row justify-content-center">
+
+            <span class="col-md-9">    
+            <div class="smspacer"></div>
             <div class="important">
                 <h4>Project Scope:</h4>
                 <ul>
@@ -317,30 +334,37 @@
             <div class="lgspacer"></div>
 
 
-            <div class="row">
-
-                <div class="col-md-6">
 
                     <h1>The Problem </h1>
-                    <p>Lime riders in a time crunch have no way of ensuring they can find and rent an available scooter.</p>
+                    <p>Lime users in a time crunch have no way of ensuring that a scooter will be available to rent after investing the time and energy of walking to it.</p>
 
 
 
 
-                </div>
-
-                <div class="col-md-6">
-
-
+        
+            
+                <div class="smspacer"></div>
+                <h4>Storyboard of the problem</h4>
+                <a data-fancybox="gallery" href="images/lime_reserve/problem-sb.png"><img src="images/lime_reserve/problem-sb.png" class="imagesize"></a>
+                
+                
+                
+                <div class="lgspacer"></div>
+                
                     <h1>The Solution </h1>
                     <p>A feature within Lime that allows riders to reserve a scooter when they are 0.5 miles from their selected scooter for a certain price.</p>
-
-
-
-                </div>
-
+                
+                
+                <div class="smspacer"></div>
+            <div class="row justify-content-center">
+                <img src="images/lime_reserve/second_time.gif" class="gifsize">
 
             </div>
+
+            <div class="smspacer"></div>
+                
+                
+                
 
             <div class="lgspacer"></div>
             <h1>My Process </h1>
@@ -362,7 +386,6 @@
 
 
 
-            <span class="col-md-7">
                 <h2>Research</h2>
                 <p>I personally have struggled with this problem while using Lime's scooter service. Before diving into any problem, I always strive to find out if this problem is worth solving and then understand the problem more deeply.
 
@@ -371,8 +394,7 @@
                 </p>
                  <div class="smspacer"></div>
                 
-                
-            </span>
+    
 
 
 
@@ -425,8 +447,8 @@
             <div class="smspacer"></div>
 
             <div class="important">
-                <h4>Problem Statement</h4>
-                <p>How might Lime (the scooter company) help users in a time crunch ensure that they can find and rent an available scooter.</p>
+                <h4>HMW Question:</h4>
+                <h2>How might Lime (the scooter company) help users in a time crunch ensure that they can find and rent an available scooter?</h2>
             </div>
 
             <div class="lgspacer"></div>
@@ -557,10 +579,26 @@
             </div>
 
             <div class="lgspacer"></div>
+                    
+            <div class="row">       
+                    
+                <span class="col-md-6">
+                
             <h4>Usability Issue 1:</h4>
 
             <p>
-                The main usability issue that I found was that the users were concerned that they paid $3 for the reservation but were <strong>not notified that there was a time limit.</strong> To help users be aware of the time limit on the reservation feature, I added a first-time feature interaction. This would allow the user to explore the reservation feature for the first time without committing to payment.</p>
+                The main usability issue that I found was that the users were concerned that they paid $3 for the reservation but were <strong>not notified that there was a time limit.</strong> </p>
+                
+                </span>
+                <span class="col-md-6">
+                
+            <h4>Design Decision:</h4>
+            <p>To help users be aware of the time limit on the reservation feature, I added a first-time feature interaction. This would allow the user to explore the reservation feature for the first time without committing to payment.</p>
+                </span>   
+               
+            </div> 
+                
+                <div class="smspacer"></div>
 
             <a data-fancybox="gallery" href="images/lime_reserve/issue_2.png"><img src="images/lime_reserve/issue_2.png" class="imagesize"></a>
 
@@ -696,17 +734,17 @@
     </div>
     <div class="lgspacer"></div>
 
-<a href="gradplanner.html">
-    <div class="row">
-        
+    <a href="mybyui.html">
+        <div class="row">
+
             <div class="importantclick col-md-12">
                 <p>Next Case Study</p>
-                <h1>Grad Planner Redesign</h1>
+                <h1>MyBYUI Portal Redesign</h1>
             </div>
-        
 
-    </div>
-    
+
+        </div>
+
     </a>
 
 
